@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+body {
+  font-family: "Gilroy-Regular";
+  margin: 0;
+  transition: 500ms;
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("../asset/Fonts/Gilroy-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("../asset/Fonts/Gilroy-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-BoldItalic";
+  src: url("../asset/Fonts/Gilroy-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Heavy";
+  src: url("../asset/Fonts/Gilroy-Heavy.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("../asset/Fonts/Gilroy-Light.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("../asset/Fonts/Gilroy-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url("../asset/Fonts/Gilroy-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Thin";
+  src: url("../asset/Fonts/Gilroy-Thin.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-UltraLight";
+  src: url("../asset/Fonts/Gilroy-UltraLight.ttf");
+}
+
+button {
+  cursor: pointer;
+}
+
+// * {
+//   outline: 2px dotted red;
+// }
+
+// ---------------------------------------

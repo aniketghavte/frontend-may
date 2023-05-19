@@ -1,0 +1,92 @@
+@import "@/styles/_config.scss";
+
+.Navbar {
+  width: 90vw;
+  // max-width: 95vw;
+  margin: auto auto;
+  padding: 1.2rem 2.5vw;
+  display: flex;
+  align-items: center;
+  // position: fixed;
+}
+
+.Logo {
+  font-family: $Exo2Font;
+  color: $primary-purple;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 110%;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  text-decoration: none;
+}
+
+.SearchBox {
+  background-color: #e8eef6;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 0.4rem 0.5rem 0.4rem 1rem;
+  margin-left: 2rem;
+  display: flex;
+
+  input {
+    font-size: medium;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 250px;
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+
+  button {
+    background-color: #582be8;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    // aspect-ratio: 1/1;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+
+    img {
+      filter: invert(1);
+    }
+  }
+}
+
+.NavButtons {
+  margin-left: auto;
+  //   background-color: red;
+
+  .JoinButton {
+    background-color: #582be8;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.08rem;
+    transition: 250ms;
+
+    &:hover {
+      //   background-color: #3fbe87;
+      scale: 1.05;
+    }
+  }
+}

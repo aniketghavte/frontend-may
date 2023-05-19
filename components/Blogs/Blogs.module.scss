@@ -1,0 +1,43 @@
+@import "@/styles/_config.scss";
+
+.Blogs {
+  padding: 4rem 6vw;
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: 1.6rem;
+  }
+}
+
+.BlogCollection {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(345px, 400px));
+  grid-gap: 2rem;
+  justify-content: center;
+
+  .Blog {
+    text-decoration: none;
+    color: black;
+
+    .BlogImage {
+      aspect-ratio: 16/9;
+
+      img {
+        border-radius: 5px;
+      }
+    }
+
+    .BlogHeading {
+      color: #333437;
+      font-weight: 900;
+      font-size: 1.25rem;
+      margin: 1rem 0 0.35rem 0;
+    }
+
+    .BlogTags {
+      color: #74767e;
+      font-weight: 900;
+      font-size: 1rem;
+    }
+  }
+}

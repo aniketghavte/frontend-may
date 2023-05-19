@@ -1,0 +1,133 @@
+@import "@/styles/_config.scss";
+
+.BountyCollection {
+  padding: 4rem 5vw;
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .Tabs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+
+    .Tab {
+      user-select: none;
+      cursor: pointer;
+      border: 1px solid #00000020;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 8px 0px;
+      transition: 200ms;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+      }
+    }
+
+    .SelectedTab {
+      font-weight: 900;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+    }
+  }
+
+  .Collection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(345px, 400px));
+    grid-gap: 2rem;
+    justify-content: center;
+
+    .Bounty {
+      overflow: hidden;
+      border: 1px solid #00000020;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 8px 0px;
+      padding: 0.65rem;
+      border-radius: 10px;
+      transition: 200ms;
+      color: #333437;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+
+      &:hover {
+        // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 20px;
+        // scale: 1.06;
+      }
+
+      .BountyImage {
+        aspect-ratio: 16/9;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .Owner {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        margin: 0.5rem 0;
+
+        .ProfilePic {
+          height: 26px;
+          width: 26px;
+          border-radius: 50%;
+          position: relative;
+          overflow: hidden;
+          margin-right: 0.5rem;
+        }
+
+        .Name {
+          color: #74767e;
+          font-weight: 900;
+          font-size: 1rem;
+        }
+      }
+
+      .BountyTitle {
+        font-weight: 900;
+        font-size: 1.15rem;
+        margin: 0.5rem 0;
+        // text-align: justify;
+      }
+
+      .Tags {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0.5rem;
+
+        .Tag {
+          margin: 0 0.5rem 0.5rem 0;
+          border-radius: 30px;
+          outline: 1px solid #00000020;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 8px 0px;
+          padding: 0.15rem 0.5rem;
+          white-space: nowrap;
+        }
+      }
+
+      .PricePool {
+        display: flex;
+        margin: auto 0 0.5rem 0;
+        align-items: center;
+        font-size: 1.15rem;
+        font-weight: 900;
+
+        .Emoji {
+          font-size: 1.5rem;
+          margin-right: 0.1rem;
+          transform: translateY(-2px);
+        }
+
+        .PricePoolTitle {
+          font-family: $gilroy-bold;
+          margin-right: 0.5rem;
+          color: #ddad34;
+        }
+      }
+    }
+  }
+}

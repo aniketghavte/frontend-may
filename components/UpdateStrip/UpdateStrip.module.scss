@@ -1,0 +1,28 @@
+@import "@/styles/_config.scss";
+
+.UpdateStrip {
+  font-family: $Exo2Font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 110%;
+  /* or 26px */
+  overflow: hidden;
+  padding: 20px 0px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  background-color: #582be8;
+  color: white;
+
+  & div {
+    &::after {
+      color: red;
+      background: none !important;
+      height: 0;
+    }
+    &::before {
+      height: 0;
+      background: none !important;
+    }
+  }
+}

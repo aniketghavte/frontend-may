@@ -1,0 +1,104 @@
+@import "@/styles/_config.scss";
+
+.HeroSection {
+  padding: 2rem 5vw 5rem 5vw;
+  //   color: white;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: calc(85vh - $NavbarHeight);
+  //   background-color: #6a49da;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h1 {
+    margin: 1rem 0;
+    font-size: 3.5rem;
+    font-weight: 900;
+    font-family: $gilroy-bold;
+    width: 100%;
+  }
+
+  h2 {
+    margin: 0.5rem 0 1rem 0;
+    color: #666c7e;
+    // color: #dcdde2;
+    font-size: 1.15rem;
+    line-height: 1.65rem;
+    word-spacing: 0.2rem;
+    width: 80%;
+    text-align: justify;
+  }
+}
+
+.JoinInput {
+  color: black;
+  background-color: #e8eef6;
+  align-items: center;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 0.4rem 0.5rem 0.4rem 1rem;
+  //   margin-left: 1.5rem;
+  display: flex;
+  width: fit-content;
+  padding: 0.5rem;
+
+  div {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+  }
+
+  input {
+    margin-left: 0.1rem;
+    width: 130px;
+    padding-right: 0.4rem;
+    align-items: center;
+    font-size: medium;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    // width: 20px;
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+
+  button {
+    background-color: #582be8;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding: 0.65rem 0.8rem;
+    font-size: 1rem;
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+}
+
+.col2 {
+  align-items: center;
+  justify-content: baseline;
+
+  .HeroImage {
+    width: 80%;
+    height: 80%;
+  }
+}

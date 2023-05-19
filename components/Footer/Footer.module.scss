@@ -1,0 +1,22 @@
+@import "@/styles/_config.scss";
+
+.Footer {
+  padding: 4rem 5vw;
+  background-color: #252525;
+  color: white;
+}
+
+.Logo {
+  font-family: $Exo2Font;
+  color: #b765fb;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 110%;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  text-decoration: none;
+}
