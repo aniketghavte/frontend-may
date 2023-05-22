@@ -7,10 +7,6 @@ import { useSession, signIn, signOut } from "next-auth/react";
 import { useRouter } from "next/router";
 import { stringify } from 'query-string';
 import {Toaster, Toast, toast} from 'react-hot-toast'
-import waitlist_pic from '../../public/waitlistpic.svg';
-import line from '../../public/line.svg'
-import getStarted from '../../public/getStarted.svg'
-import joinWaitlistImage from '../../Images/claim_username.svg'
 import finalImage from '../../public/finalImage.svg'
 const Waitlist = () => {
   const [user, setUser] = useState();          

@@ -9,11 +9,6 @@ import {AiOutlineCloseCircle} from 'react-icons/ai'
 import { useSession, signIn, signOut } from "next-auth/react";
 import wallet from '../../Images/wallet-black.svg'
 import Link from "next/link";
-
-
-import waitlist_pic from '../../public/waitlistpic.svg';
-import line from '../../public/line.svg'
-import getStarted from '../../public/getStarted.svg'
 import joinWaitlistImage from '../../Images/claim_username.svg'
 import finalImage from '../../public/finalImage.svg'
 
