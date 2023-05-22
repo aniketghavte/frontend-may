@@ -8,6 +8,12 @@ const Footer = () => {
         <br />
         Protocol
       </div>
+      <div>
+         <div></div>
+      </div>
+      <div>
+        <p style={{fontSize: "1.2rem"}}>Contact us At</p>
+      </div>
     </div>
   );
 };

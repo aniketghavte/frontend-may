@@ -2,12 +2,14 @@ import styles from "./BountyCollection.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Frame309 from '../../Images/Frame309.svg'
+import Frame12 from '../../Images/Frame12.svg'
 
 const BountyCollection = () => {
   const [Bounties, setBounties] = useState([
     {
       image: "/profile.png",
-      title: <>Lorem ipsum dolor sit amet conse adipisi liag aignb.</>,
+      title: "Become ActualOne Protocol City Ambassador for a spam of minimum 6 months and organize events on behalf of ActualOne Protocol.",
       tags: ["Frontend", "Web Dev", "Full Stack", "abc", "xyz"],
       price_pool: "5 ETH",
       link: "/bounty",
@@ -19,7 +21,7 @@ const BountyCollection = () => {
     },
     {
       image: "/bounty.webp",
-      title: <>Lorem ipsum dolor sit amet conse adipisi liag aignb.</>,
+      title: "Building a Decentralized Autonomous Organization for Public Governance: A Bounty Program for Web3 Developers and Civic Tech Experts",
       tags: ["Frontend", "Web Dev", "Full Stack", "abc", "xyz"],
       price_pool: "5 ETH",
       link: "/bounty",
@@ -31,7 +33,7 @@ const BountyCollection = () => {
     },
     {
       image: "/blogImg.webp",
-      title: <>Lorem ipsum dolor sit amet conse adipisi liag aignb.</>,
+      title: "Creating a Decentralized Marketplace for Renewable Energy Credits: A Bounty Program for Web3 Developers and Energy Expert",
       tags: ["Frontend", "Web Dev", "Full Stack", "abc", "xyz"],
       price_pool: "5 ETH",
       link: "/bounty",
@@ -44,7 +46,7 @@ const BountyCollection = () => {
 
     {
       image: "/blogImg.webp",
-      title: <>Lorem ipsum dolor sit amet conse adipisi liag aignb.</>,
+      title: "Creating a Decentralized Marketplace for Renewable Energy Credits: A Bounty Program for Web3 Developers and Energy Expert",
       tags: ["Frontend", "Web Dev", "Full Stack", "abc", "xyz"],
       price_pool: "5 ETH",
       link: "/bounty",
@@ -56,7 +58,7 @@ const BountyCollection = () => {
     },
     {
       image: "/profile.png",
-      title: <>Lorem ipsum dolor sit amet conse adipisi liag aignb.</>,
+      title: "Creating a Decentralized Social Media Platform: A Bounty Program for Web3 Developers and Social Media Entrepreneurs",
       tags: ["Frontend", "Web Dev", "Full Stack", "abc", "xyz"],
       price_pool: "5 ETH",
       link: "/bounty",
@@ -68,7 +70,7 @@ const BountyCollection = () => {
     },
     {
       image: "/bounty.webp",
-      title: <>Lorem ipsum dolor sit amet conse adipisi liag aignb.</>,
+      title: "Revolutionizing Healthcare with Blockchain: A Bounty Program for Healthtech Innovators",
       tags: ["Frontend", "Web Dev", "Full Stack", "abc", "xyz"],
       price_pool: "5 ETH",
       link: "/bounty",
@@ -81,7 +83,7 @@ const BountyCollection = () => {
 
     {
       image: "/bounty.webp",
-      title: <>Lorem ipsum dolor sit amet conse adipisi liag aignb.</>,
+      title: "Improving Blockchain Scalability: A Bounty Program for Web3 Developers and Blockchain Architect",
       tags: ["Frontend", "Web Dev", "Full Stack", "abc", "xyz"],
       price_pool: "5 ETH",
       link: "/bounty",
@@ -93,7 +95,7 @@ const BountyCollection = () => {
     },
     {
       image: "/blogImg.webp",
-      title: <>Lorem ipsum dolor sit amet conse adipisi liag aignb.</>,
+      title: "Reducing Transaction Fees in Decentralized Exchanges: A Bounty Program for Web3 Developers and Crypto Traders",
       tags: ["sample", "Frontend", "Web Dev", "Full Stack", "abc", "xyz"],
       price_pool: "5 ETH",
       link: "/bounty",
@@ -105,7 +107,7 @@ const BountyCollection = () => {
     },
     {
       image: "/profile.png",
-      title: <>Lorem ipsum dolor sit amet conse adipisi liag aignb.</>,
+      title:"Web3-Based Agriculture: A Bounty Program for Blockchain Developers and Agritech Innovator",
       tags: ["Frontend", "Web Dev", "Full Stack", "abc", "xyz"],
       price_pool: "5 ETH",
       link: "/bounty",
@@ -189,45 +191,59 @@ const BountyCollection = () => {
         )}
         {SortedBounties.map((item, index) => {
           return (
-            <Link href={item.link} className={styles.Bounty} key={index}>
-              <div
-                className={styles.BountyImage}
-                style={{ position: "relative" }}
-              >
-                <Image
-                  src={item.image}
-                  alt={"Bounty Image"}
-                  fill
-                  objectFit="cover"
-                />
-              </div>
-              <div className={styles.Owner}>
-                <div className={styles.ProfilePic}>
-                  <Image
-                    src={item.owner.profile_pic}
-                    alt={"Profile Pic"}
-                    fill
-                    objectFit="cover"
-                  />
+            // <Link href={item.link} className={styles.Bounty} key={index}>
+            //   <div
+            //     className={styles.BountyImage}
+            //     style={{ position: "relative" }}
+            //   >
+            //     <Image
+            //       src={item.image}
+            //       alt={"Bounty Image"}
+            //       fill
+            //       objectFit="cover"
+            //     />
+            //   </div>
+            //   <div className={styles.Owner}>
+            //     <div className={styles.ProfilePic}>
+            //       <Image
+            //         src={item.owner.profile_pic}
+            //         alt={"Profile Pic"}
+            //         fill
+            //         objectFit="cover"
+            //       />
+            //     </div>
+            //     <div className={styles.Name}>{item.owner.name}</div>
+            //   </div>
+            //   <div className={styles.BountyTitle}>{item.title}</div>
+            //   <div className={styles.Tags}>
+            //     {item.tags.map((tag, tagIndex) => {
+            //       return (
+            //         <div key={tagIndex} className={styles.Tag}>
+            //           {tag}
+            //         </div>
+            //       );
+            //     })}
+            //   </div>
+            //   <div className={styles.PricePool}>
+            //     <div className={styles.Emoji}>🪙</div>
+            //     <div className={styles.PricePoolTitle}>Price Pool:</div>
+            //     <span className={styles.Price}>{item.price_pool}</span>
+            //   </div>
+            // </Link>
+            <div className={styles.bountyCard}>
+                <div className={styles.bountyHeader}>
+                   <h3>
+                     {item.title}
+                   </h3>
+                   <p>Start Date - 1st May  ·  End Date - 15th May</p>
                 </div>
-                <div className={styles.Name}>{item.owner.name}</div>
-              </div>
-              <div className={styles.BountyTitle}>{item.title}</div>
-              <div className={styles.Tags}>
-                {item.tags.map((tag, tagIndex) => {
-                  return (
-                    <div key={tagIndex} className={styles.Tag}>
-                      {tag}
-                    </div>
-                  );
-                })}
-              </div>
-              <div className={styles.PricePool}>
-                <div className={styles.Emoji}>🪙</div>
-                <div className={styles.PricePoolTitle}>Price Pool:</div>
-                <span className={styles.Price}>{item.price_pool}</span>
-              </div>
-            </Link>
+                <div className={styles.bountyTags}>
+                    <Image src={Frame12} height={0} width={0} />
+                </div>
+                <div className={styles.bountyDetails}>
+                    <Image src={Frame309} height={0} width={0} />
+                </div>
+            </div>
           );
         })}
       </div>
