@@ -230,7 +230,7 @@ const BountyCollection = () => {
             //     <span className={styles.Price}>{item.price_pool}</span>
             //   </div>
             // </Link>
-            <div className={styles.bountyCard}>
+            <div className={styles.bountyCard} key={index}>
                 <div className={styles.bountyHeader}>
                    <h3>
                      {item.title}

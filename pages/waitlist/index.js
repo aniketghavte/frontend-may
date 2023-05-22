@@ -12,7 +12,7 @@ import line from '../../public/line.svg'
 import getStarted from '../../public/getStarted.svg'
 import joinWaitlistImage from '../../Images/claim_username.svg'
 import finalImage from '../../public/finalImage.svg'
-const waitlist = () => {
+const Waitlist = () => {
   const [user, setUser] = useState();          
   const [newUserName, setNewUserName] = useState()
     const router = useRouter();
@@ -97,7 +97,7 @@ const waitlist = () => {
           <div style={{display: "flex", flexDirection: "column", alignItems: "center" , justifyContent: "center"}}>
       <div className={styles.block2}>
             <div className={styles.headline}>
-              Join The ActualOne Protocol's Waitlist
+              Join The ActualOne Protocol&apos;s Waitlist
             </div>
             <div className={styles.mainHeadline}>
               <p style={{margin: "0"}}>Yoo, 
@@ -155,7 +155,7 @@ const waitlist = () => {
           success: {
             iconTheme: {
               primary: '#141414',
-              secondary: 'white',
+              secondary: '#ac47ff',
             },
           },
         }}
@@ -164,4 +164,4 @@ const waitlist = () => {
   )
 }
 
-export default waitlist
+export default Waitlist

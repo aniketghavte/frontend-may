@@ -39,7 +39,7 @@ const HeroSection = () => {
                 <AiOutlineCloseCircle style={{height : "100%", width: "100%"}}/>
                </div>
               <div className={styles.login_block1}>
-                  <h3>Let's Start By</h3>
+                  <h3>Let&apos;s Start By</h3>
                   <h1>Login/Sign up</h1>
                   <p>Login/Sign up with either email or wallet to start your Web3 journey with Truts and earn some XPs!</p>
               </div>
@@ -124,7 +124,7 @@ const HeroSection = () => {
        }
       <div className={styles.block2}>
             <div className={styles.headline}>
-              Join The ActualOne Protocol's Waitlist
+              Join The ActualOne Protocol&apos;s Waitlist
             </div>
             <div className={styles.mainHeadline}>
               <p style={{margin: "0"}}>Creating&nbsp; 
