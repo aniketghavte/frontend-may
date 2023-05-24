@@ -83,7 +83,7 @@ const Navbar = () => {
           <div className={styles.NavButtons}>
             {
               session ? <Link href={`/waitlist`}>
-                <button className={styles.JoinedButton}>Hey, {session?.token?.name}</button>
+                <button className={styles.JoinedButton}>See Waitlist</button>
               </Link> : <>
                 <button className={styles.JoinButton} onClick={handleJoinClick}>Join</button>
               </>

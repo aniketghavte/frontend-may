@@ -97,7 +97,7 @@ const Waitlist = () => {
             </div>
             <div className={styles.mainHeadline}>
               <p style={{margin: "0"}}>Yoo, 
-                  Your Made Into The&nbsp;
+                  You Made Into The&nbsp;
                 <span style={{color: "#ac47ff"}}> 
                 Waitlist
                 </span></p>
@@ -147,14 +147,6 @@ const Waitlist = () => {
     <Toaster       
         position="top-center"
         reverseOrder={false}
-        toastOptions={{
-          success: {
-            iconTheme: {
-              primary: '#141414',
-              secondary: '#ac47ff',
-            },
-          },
-        }}
         />
     </div>
   )

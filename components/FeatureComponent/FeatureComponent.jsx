@@ -34,7 +34,7 @@ const FeatureComponent = () => {
   ];
 
   const isVideo = true;
-  const Url = "/vid.mp4";
+  const Url = "/a1.mp4";
 
   return (
     <div className={styles.FeatureComponent}>

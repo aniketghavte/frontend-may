@@ -391,7 +391,7 @@
   }
   .mainHeadline{
     width: 100%;
-    font-size: 45px;
+    font-size: 55px;
     margin-bottom: -1rem;
   }
   .span_image:first-child{
@@ -422,6 +422,18 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+  }
+  .waitlistDiv{
+    min-width: 10rem;
+    height: 100%;
+    text-align: start;
+    align-items: center;
+    display: flex;
+    padding: 0 2rem;
+    font-size: 1.3rem;
+    white-space: nowrap;
+    font-weight: 600;
+    overflow: scroll;
   }
 }
 .waitlistDiv{
