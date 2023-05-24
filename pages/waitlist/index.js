@@ -51,12 +51,17 @@ const Waitlist = () => {
             }
             })
             .then(function (response) {
-              setUser(response?.data?.profile?.data?.user)
-              console.log(response);
-              toast.success("UserName Sucessfully Updated")
+              if(response?.data?.profile?.status === 409){
+                toast.error("UserName already exists")
+              } else {
+                setUser(response?.data?.profile?.data?.user)
+                console.log(response);
+                toast.success("UserName Sucessfully Updated")                
+              }
             })
             .catch(function (error) {
               console.log(error);
+              toast.error("UserName already Taken try again")
             });
         }
         
@@ -67,7 +72,7 @@ const Waitlist = () => {
     //    handleShareButtonClick()
     // }
       const handleShareButtonClick = () => {
-          const tweetText = 'Hey, I just get into the the ActualOne Waitlist Join!'; // The text you want to share on Twitter
+          const tweetText = 'Hey, I just get into the ActualOne Waitlist Join!'; // The text you want to share on Twitter
           const tweetUrl = 'https://actualone.xyz'; // The URL you want to share
           const params = new URLSearchParams();
           params.set('text', tweetText);
