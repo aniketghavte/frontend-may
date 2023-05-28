@@ -256,7 +256,7 @@
   /* background-color: #7b7b7b; */
   height: 100vh;
   width: 65%;
-  margin-top: 1rem;
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -332,8 +332,8 @@
 }
 .joinWaitlistImage{
   position: absolute;
-  right: 5rem;
-  bottom: 1rem;
+  right: 10rem;
+  bottom: 3rem;
 }
 .finalImage{
   position: absolute;
@@ -346,8 +346,18 @@
 @media (max-width: 1300px) {
   .joinWaitlistImage{
     position: absolute;
-    right: 5rem;
+    right: 8rem;
     bottom: 1rem;
+  }
+  .block2{
+    width: 75%;
+  }
+}
+@media (max-width: 1230px) {
+  .joinWaitlistImage{
+    position: absolute;
+    right: 5rem;
+    bottom:3rem;
   }
   .block2{
     width: 75%;
@@ -385,6 +395,19 @@
     gap: 2rem;
   }
 }
+@media (max-width: 850px){
+  .block2 {
+    /* background-color: #7b7b7b; */
+    height: 100vh;
+    width: 65%;
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+}
 @media (max-width: 600px){
   .block2{
     width: 100%;
@@ -394,6 +417,14 @@
     font-size: 55px;
     margin-bottom: -1rem;
   }
+  .block2 {
+    /* background-color: #7b7b7b; */
+    height: 100vh;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
   .span_image:first-child{
     transform: translate(-50%,-100%);
   }

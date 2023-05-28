@@ -39,12 +39,12 @@ const HeroSection = () => {
                   <p>Login/Sign up with either email or wallet to start your Web3 journey with Truts and earn some XPs!</p>
               </div>
               <div className={styles.login_block2}>
-                  <div className={styles.loign_container1}>
+                  <div className={styles.loign_container1} style={{ cursor: "pointer"}} onClick={handleSubmitLogin}>
                       <div className={styles.login_profile} >
                           <Image alt="img" src="https://upload.wikimedia.org/wikipedia/commons/archive/5/53/20161128230037%21Google_%22G%22_Logo.svg" width={0} height={0}/>
                       </div>
                       <p>You can use your Google account to signup/log in</p>
-                      <div style={{display: "flex", alignItems: "center", justifyContent: "center", gap: "1rem", border: "1px solid #141414", padding: "0 1rem", borderRadius: "10px", cursor: "pointer"}} onClick={handleSubmitLogin}>
+                      <div style={{display: "flex", alignItems: "center", justifyContent: "center", gap: "1rem", border: "1px solid #141414", padding: "0 1rem", borderRadius: "10px", cursor: "pointer"}}>
                         <Image alt="img"  src="https://upload.wikimedia.org/wikipedia/commons/archive/5/53/20161128230037%21Google_%22G%22_Logo.svg" width={0} height={0} style={{height: "30px", width: "30px"}}/>
                         <p>Sign In With Google</p>
                       </div>
