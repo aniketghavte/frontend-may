@@ -73,14 +73,15 @@ const Navbar = () => {
             </Link>
             
           </div>
-          <div className={styles.nav_tags}>
-            <Link href={`/`}><h4>About</h4></Link>
-            <Link href={`/`}><h4>Contact Us</h4></Link>
-          </div>
+
 
           {/* <div className={styles.NavLinks}>a</div> */}
 
           <div className={styles.NavButtons}>
+          <div className={styles.nav_tags}>
+            <Link href={`/`}><h4>About</h4></Link>
+            <Link href={`/`}><h4>Contact Us</h4></Link>
+          </div>
             {
               session ? <Link href={`/waitlist`}>
                 <button className={styles.JoinedButton}>See Waitlist</button>

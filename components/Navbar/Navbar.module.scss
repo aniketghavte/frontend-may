@@ -22,6 +22,10 @@
   font-size: 1.2rem;
   cursor: pointer;
   transition: 0.2s;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 110%;
+  color: #595959;
 }
 .nav_tags h4:hover{
   color: #582be8;
@@ -89,15 +93,18 @@
 
 .NavButtons {
   margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
   //   background-color: red;
 
   .JoinButton {
-    background-color: #582be8;
+    background: #AC47FF;
+    border-radius: 10px;
     color: white;
     padding: 0.6rem 1.2rem;
     border: none;
     outline: none;
-    border-radius: 30px;
     font-size: 1.08rem;
     transition: 250ms;
 
@@ -107,12 +114,12 @@
     }
   }
   .JoinedButton {
-    background-color: #582be8;
+    background: #AC47FF;
+    border-radius: 10px;
     color: white;
     padding: 0.6rem 1.2rem;
     border: none;
     outline: none;
-    border-radius: 30px;
     font-size: 1.08rem;
     transition: 250ms;
   }

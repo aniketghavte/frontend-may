@@ -11,7 +11,7 @@ import wallet from '../../Images/wallet-black.svg'
 import Link from "next/link";
 import joinWaitlistImage from '../../Images/claim_username.svg'
 import finalImage from '../../public/finalImage.svg'
-
+import left_svg from '../../Images/left_svg.svg'
 
 const HeroSection = () => {
   const [userName, setUserName] = useState("");
@@ -122,15 +122,11 @@ const HeroSection = () => {
               Join The ActualOne Protocol&apos;s Waitlist
             </div>
             <div className={styles.mainHeadline}>
-              <p style={{margin: "0"}}>Creating&nbsp; 
-                <span style={{color: "#ac47ff"}}>
-                opportunities&nbsp;
-                </span> 
-                  to build&nbsp;
-                <span style={{color: "#ac47ff"}}> 
-                Together
-                </span>. 🚀</p>
-
+              <p style={{margin: "0"}}>We are taking&nbsp; 
+                <span style={{color: "#ac47ff"}}>Opportunities</span>&nbsp;to a multiplayer game</p>
+            </div>
+            <div>
+            <p className={styles.subheadline}>Yass!!! You have read that correctly</p>
             </div>
             <div className={styles.block3}>
                 {
@@ -148,7 +144,7 @@ const HeroSection = () => {
                   </>
                 }
             </div>
-            <Image src={finalImage} alt="get Started " className={styles.finalImage}/>
+            <Image src={left_svg} alt="get Started " className={styles.finalImage}/>
         </div>
     </div>    
   );

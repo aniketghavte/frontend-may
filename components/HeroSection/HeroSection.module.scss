@@ -255,7 +255,7 @@
 .block2{
   /* background-color: #7b7b7b; */
   height: 100vh;
-  width: 65%;
+  width: 71%;
   margin-top: 4rem;
   display: flex;
   flex-direction: column;
@@ -276,14 +276,14 @@
   white-space: nowrap;
 }
 .mainHeadline{
-  font-size: 85px;
-  font-style: normal;
-    font-weight: 700;
-    line-height: 110%;
-    text-align: center;
-    color: #232323;
     margin-bottom: 1rem;
     position: relative;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 125%;
+    text-align: center;
+    color: #222222;
 }
 .waitlist_pic{
   color: #ac47ff;
@@ -311,7 +311,7 @@
   overflow: hidden;
   display: grid;
   grid-template-columns: 70% 30%;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 .block3 input{
   outline: none;
@@ -319,6 +319,13 @@
   border: none;
   padding-left: 1.5rem;
   width: calc(100% - 2rem);
+}
+.subheadline{
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #595959;
+  margin: 0;
 }
 .block3 button{
     font-size: 16px;
