@@ -326,6 +326,7 @@
   text-align: center;
   color: #595959;
   margin: 0;
+  position: relative;
 }
 .block3 button{
     font-size: 16px;
@@ -340,11 +341,11 @@
 .joinWaitlistImage{
   position: absolute;
   right: 10rem;
-  bottom: 3rem;
+  bottom: 9rem;
 }
 .finalImage{
   position: absolute;
-  left: 2rem;
+  left: 5%;
   bottom: 2rem;
 }
 .launch_span{
@@ -493,4 +494,22 @@
   padding: 0 2rem;
   font-size: 1.3rem;
   font-weight: 600;
+}
+
+.correctly_underline{
+  position: absolute;
+  bottom: 0;
+  top: 2rem;
+  right: 0rem;
+}
+.game_underlline{
+  position: absolute;
+  bottom: 0;
+  top: 5.5rem;
+  right: 1rem;
+}
+.oppo_arrow{
+  position: absolute;
+  right: -35rem;
+  top: 0;
 }

@@ -9,9 +9,12 @@ import {AiOutlineCloseCircle} from 'react-icons/ai'
 import { useSession, signIn, signOut } from "next-auth/react";
 import wallet from '../../Images/wallet-black.svg'
 import Link from "next/link";
-import joinWaitlistImage from '../../Images/claim_username.svg'
+import right_svg from '../../Images/right_svg.svg'
 import finalImage from '../../public/finalImage.svg'
 import left_svg from '../../Images/left_svg.svg'
+import arrow from '../../Images/arrow.svg'
+import correctly_underline from '../../Images/correctly_underline.svg'
+import game_underlline from '../../Images/game_underlline.svg'
 
 const HeroSection = () => {
   const [userName, setUserName] = useState("");
@@ -122,11 +125,11 @@ const HeroSection = () => {
               Join The ActualOne Protocol&apos;s Waitlist
             </div>
             <div className={styles.mainHeadline}>
-              <p style={{margin: "0"}}>We are taking&nbsp; 
-                <span style={{color: "#ac47ff"}}>Opportunities</span>&nbsp;to a multiplayer game</p>
+              <p style={{margin: "0"}}>We are taking 
+                <span style={{color: "#ac47ff", position:"relative"}}>&nbsp;Opportunities <Image src={arrow} className={styles.oppo_arrow} height={0} width={0}/></span>&nbsp;to a multiplayer <span style={{margin: "0", position: "relative"}}>game <Image src={game_underlline} className={styles.game_underlline} height={0} width={0}/></span></p>
             </div>
             <div>
-            <p className={styles.subheadline}>Yass!!! You have read that correctly</p>
+            <p className={styles.subheadline}>Yass!!! You have read that <span style={{position: "relative"}}>correctly <Image src={correctly_underline} className={styles.correctly_underline} height={0} width={0}/></span></p>
             </div>
             <div className={styles.block3}>
                 {
@@ -139,7 +142,7 @@ const HeroSection = () => {
                   </div>
    
                   <button onClick={handleJoinClick}>Join</button>
-                  <Image src={joinWaitlistImage} alt="get Started " className={styles.joinWaitlistImage}/>
+                  <Image src={right_svg} alt="get Started " className={styles.joinWaitlistImage}/>
 
                   </>
                 }

@@ -1,5 +1,6 @@
 import styles from "./FeatureComponent.module.scss";
 import Image from "next/image";
+import eyes from '../../Images/eyes.svg'
 
 const FeatureComponent = () => {
   const Heading = "Feature Component";
@@ -37,30 +38,16 @@ const FeatureComponent = () => {
   const Url = "/a1.mp4";
 
   return (
-    <div className={styles.FeatureComponent}>
-      <div className={styles.col1}>
-        <h1>{Heading}</h1>
-
-        {Points.map((item, index) => {
-          return (
-            <div className={styles.Point} key={index}>
-              <div className={styles.PointHeading}>
-                <span>&nbsp;</span>
-                <div>{item.heading}</div>
-              </div>
-              <div className={styles.PointDescription}>{item.description}</div>
-            </div>
-          );
-        })}
+    <div className={styles.app__feature}>
+      <div className={styles.feature_block1}>
+        <div className={styles.block1_div1}>
+          <h2>This is how we play our <span className={styles.role_span}>Role <Image src={eyes} height={0} width={0} /></span></h2>
+        </div>
       </div>
-      <div className={styles.col2}>
-        {isVideo ? (
-          <video autoPlay muted loop controls>
-            <source src={Url} type="video/mp4" />
-          </video>
-        ) : (
-          <Image src={Url} alt="a" fill objectFit="cover" />
-        )}
+      <div className={styles.feature_block2}>
+        <div>
+          gg
+        </div>
       </div>
     </div>
   );
