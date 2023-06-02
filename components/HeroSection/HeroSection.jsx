@@ -142,10 +142,10 @@ const HeroSection = () => {
                   </div>
    
                   <button onClick={handleJoinClick}>Join</button>
-                  <Image src={right_svg} alt="get Started " className={styles.joinWaitlistImage}/>
 
                   </>
                 }
+                <Image src={right_svg} alt="get Started " className={styles.joinWaitlistImage}/>
             </div>
             <Image src={left_svg} alt="get Started " className={styles.finalImage}/>
         </div>

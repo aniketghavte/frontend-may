@@ -2,9 +2,21 @@
 
 .BountyCollection {
   padding: 4rem 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  overflow: hidden;
 
   h1 {
     font-size: 2.2rem;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 110%;
+    color: #222222;
+    display:flex;
+    align-items: center;
   }
 
   .Tabs {
@@ -37,6 +49,7 @@
 
   .Collection {
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(auto-fill, minmax(345px, 400px));
     grid-gap: 2rem;
     justify-content: center;
@@ -167,6 +180,7 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+    text-overflow: ellipsis;
   }
   p{
     font-weight: 400;
@@ -194,4 +208,49 @@
   align-items: left;
   justify-content: start;
   margin-top: 1rem;
+}
+
+@media (max-width: 500px){
+  .BountyCollection {
+    padding: 4rem 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    overflow: hidden;
+  
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 110%;
+      color: #222222;
+      display:flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+  }
+}
+
+@media (max-width: 500px){
+  .h1_image{
+    margin-top: 2rem;
+    margin-left: 0rem !important;
+  }
+  .Collection{
+    // display: grid;
+    width: 100%;
+    /* grid-template-columns: repeat(auto-fill, minmax(345px, 400px)); */
+    // grid-gap: 2rem;
+    justify-content: center ;
+    align-items: center;
+    display: flex !important;
+    flex-direction: column;
+  }
+  .bountyCard{
+    width: 90%;
+  }
 }

@@ -30,8 +30,8 @@ export default function Home() {
         <HeroSection />
         <FeatureComponent />
         <BountyCollection />
+        <Blogs />
         <Review_Quotes />
-        {/* <Blogs /> */}
         {/* <Newsletter /> */}
         <UpdateStrip />
       </main>

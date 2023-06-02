@@ -1,44 +1,81 @@
 import styles from "./Footer.module.scss";
+import Image from "next/image";
 import Link from "next/link";
 import {AiOutlineInstagram} from "react-icons/ai"
 import {AiOutlineTwitter} from "react-icons/ai"
 import {AiFillLinkedin} from "react-icons/ai"
+import footer_hero from "../../Images/footer_hero.svg"
+import footer_arrow from "../../Images/footer_arrow.svg"
 
 const Footer = () => {
   const handleSubscribeNewsLetter = () => {
   
   }
   return (
-    <div className={styles.Footer}>
-      <div className={styles.Logo}>
-        ActualOne
-        <br />
-        Protocol
-      </div>
-      <div>
-        <h2 style={{letterSpacing: "0.5px"}}>Subscribe To our NewLetter</h2>
-          <form>
-        <div className={styles.block3} onSubmit={handleSubscribeNewsLetter}>
-              <div className={styles.waitlistDiv}>
-              <input placeholder="Email" type="email" />
+    <div className={styles.app__footer}>
+         <div className={styles.Footer}>
+            <div className={styles.Logo}>
+              <div>
+                  <h2>ActualOne</h2>
+                  <br />
+                  <h2>Protocol</h2>
+                  <h5>We are taking opportunities to a multiplayer game, wanna know how lets dive in together!!!</h5>
+              </div>
+              <div className={styles.logo_block2}>
+                <div className={styles.sub_btn}>
+                  <h4 >Subscribe our Newsletter to stay updated</h4>
+                    <form>
+                  <div className={styles.block3} onSubmit={handleSubscribeNewsLetter}>
+                        <div className={styles.waitlistDiv}>
+                        <input placeholder="Enter Your mail" type="email" />
+                      </div>
+                      <button type="submit" >Subscribe</button>             
+
+                  </div>
+                    </form>
+
+                </div>
+              </div>
             </div>
-            <button type="submit" >Subscribe</button>             
+            <div className={styles.footer_tags}>
+              <div className={styles.footer_tag}>
+                  <h6>Quick Links</h6>
+                  <div style={{display: "flex", flexDirection: "column", gap: "1rem", marginTop: "2rem"}}>
+                      <Link href={`/`}>Back to top</Link>
+                      <Link href={`/`}>About us</Link>
+                      <Link href={`/`}>Our team</Link>
+                      <Link href={`mailto:actualone.xyz@gmail.com`}>contact@actualone.xyz</Link>          
+                  </div>
 
+              </div>
+              <div className={styles.footer_tag}>
+                  <h6>Socials</h6>
+                  <div style={{display: "flex", flexDirection: "column", gap: "1rem", marginTop: "2rem"}}>
+                      <Link href={`/`}>Twitter</Link>
+                      <Link href={`/`}>Instagram</Link>
+                      <Link href={`/`}>Discord</Link>
+                      <Link href={`/`}>Telegram</Link>
+                      <Link href={`/`}>Medium</Link>          
+                  </div>
+              </div>
+
+
+            </div>
+        </div> 
+
+        <p className={styles.copyrights}>©️ 2023 ActualOne Protocol. All Rights Reserved</p>
+
+        <div className={styles.footer_hero}> 
+            <div>
+                 <h1>Opportunities</h1>         
+            </div>
+                <Image src={footer_arrow} width={0} height={0} className={styles.footer_arrow}/>            
+            <div>
+                <Image src={footer_hero} width={0} height={0} className={styles.footer_hero_image}/>
+            </div>
         </div>
-          </form>
-
-      </div>
-      <div>
-        <p style={{fontSize: "1.2rem"}}>Contact us At</p>
-        <p style={{color: "#b765fb", marginTop: '-1rem'}}><a style={{textDecoration: "none", color: "#b765fb"}} href={`mailto:actualone.xyz@gmail.com`}>actualone.xyz@gmail.com</a></p>
-        <div style={{display: "flex", justifyContent: "space-between"}}>
-          <Link href={`https://www.instagram.com/actualone.xyz/`}><AiOutlineInstagram style={{fontSize: "2rem"}} className={styles.socialIcon}/></Link>      
-          <Link href={`https://twitter.com/ActualOnexyz`}><AiOutlineTwitter style={{fontSize: "2rem"}} className={styles.socialIcon}/></Link>   
-          <Link href={`https://www.linkedin.com/company/actualone-xyz/`}><AiFillLinkedin style={{fontSize: "2rem"}} className={styles.socialIcon}/></Link>       
-        </div>
-
-      </div>
     </div>
+
   );
 };
 

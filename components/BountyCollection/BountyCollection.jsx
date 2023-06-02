@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import Frame309 from '../../Images/Frame309.svg'
 import Frame12 from '../../Images/Frame12.svg'
+import target from '../../Images/board.svg'
 
 const BountyCollection = () => {
   const [Bounties, setBounties] = useState([
@@ -79,44 +80,7 @@ const BountyCollection = () => {
         name: "Ashutosh Wagh",
         link: "/",
       },
-    },
-
-    {
-      image: "/bounty.webp",
-      title: "Improving Blockchain Scalability: A Bounty Program for Web3 Developers and Blockchain Architect",
-      tags: ["Frontend", "Web Dev", "Full Stack", "abc", "xyz"],
-      price_pool: "5 ETH",
-      link: "/bounty",
-      owner: {
-        profile_pic: "/profile.png",
-        name: "Ashutosh Wagh",
-        link: "/",
-      },
-    },
-    {
-      image: "/blogImg.webp",
-      title: "Reducing Transaction Fees in Decentralized Exchanges: A Bounty Program for Web3 Developers and Crypto Traders",
-      tags: ["sample", "Frontend", "Web Dev", "Full Stack", "abc", "xyz"],
-      price_pool: "5 ETH",
-      link: "/bounty",
-      owner: {
-        profile_pic: "/profile.png",
-        name: "Ashutosh Wagh",
-        link: "/",
-      },
-    },
-    {
-      image: "/profile.png",
-      title:"Web3-Based Agriculture: A Bounty Program for Blockchain Developers and Agritech Innovator",
-      tags: ["Frontend", "Web Dev", "Full Stack", "abc", "xyz"],
-      price_pool: "5 ETH",
-      link: "/bounty",
-      owner: {
-        profile_pic: "/profile.png",
-        name: "Ashutosh Wagh",
-        link: "/",
-      },
-    },
+    }
   ]);
 
   const [SortedBounties, setSortedBounties] = useState(Bounties);
@@ -160,9 +124,9 @@ const BountyCollection = () => {
 
   return (
     <div className={styles.BountyCollection}>
-      <h1>BountyCollection</h1>
+      <h1>Lets hunt&nbsp;<span style={{color: "#AC47FF"}}>Bounties</span>&nbsp;with us !!! <Image src={target} height={0} width={0} style={{marginLeft: "2rem"}} className={styles.h1_image}/></h1>
       <hr />
-      <div className={styles.Tabs}>
+      {/* <div className={styles.Tabs}>
         {Tabs.map((item, index) => {
           return (
             <div
@@ -181,7 +145,7 @@ const BountyCollection = () => {
             </div>
           );
         })}
-      </div>
+      </div> */}
 
       <div className={styles.Collection}>
         {SortedBounties.length === 0 && (
@@ -238,10 +202,10 @@ const BountyCollection = () => {
                    <p>Start Date - 1st May  ·  End Date - 15th May</p>
                 </div>
                 <div className={styles.bountyTags}>
-                    <Image src={Frame12} height={0} width={0} />
+                    <Image src={Frame12} height={0} width={0} style={{width: "100%"}}  />
                 </div>
                 <div className={styles.bountyDetails}>
-                    <Image src={Frame309} height={0} width={0} />
+                    <Image src={Frame309} height={0} width={0} style={{width: "100%"}} />
                 </div>
             </div>
           );

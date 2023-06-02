@@ -8,7 +8,7 @@
   grid-template-columns: repeat(2, 1fr);
   min-height: calc(85vh - $NavbarHeight);
   //   background-color: #6a49da;
-
+  overflow: hidden;
   & > div {
     display: flex;
     flex-direction: column;
@@ -512,4 +512,13 @@
   position: absolute;
   right: -35rem;
   top: 0;
+}
+
+@media (max-width: 450px){
+  .mainHeadline{
+    font-size: 45px;
+  }
+  .subheadline{
+    font-size: 20px;
+  }
 }

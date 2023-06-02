@@ -19,7 +19,7 @@ const UpdateStrip = () => {
       {UpdateTexts.map((item, index) => (
         <>
           <span style={{ color: "#FFD335" }} key={index}>
-            &nbsp;&nbsp;&nbsp;&nbsp;✦&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;
           </span>
           <span>{item}</span>
         </>
