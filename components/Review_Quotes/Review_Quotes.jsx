@@ -46,11 +46,11 @@ const Review_Quotes = () => {
   const SwitchInterval = useRef(null);
 
   useEffect(() => {
-    SwitchInterval.current = setInterval(() => {
-      setActiveBlockIndex((prevVal) =>
-        prevVal === Reviews.length - 1 ? 0 : prevVal + 1
-      );
-    }, 5000);
+    // SwitchInterval.current = setInterval(() => {
+    //   setActiveBlockIndex((prevVal) =>
+    //     prevVal === Reviews.length - 1 ? 0 : prevVal + 1
+    //   );
+    // }, 5000);
   }, []);
 
   return (

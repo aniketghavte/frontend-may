@@ -44,12 +44,12 @@ const FeatureComponent = () => {
           <h2>This is how we play our <span className={styles.role_span}>Role <Image src={eyes} height={0} width={0} /></span></h2>
         </div>
         <div className={styles.block1_div2}>
-            <h4>Feature 1 will highlight here</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor ante vel risus auctor iaculis. Nulla ut malesuada turpis. In sed purus aliquam, lacinia velit at, aliquam mauris. Aenean non finibus neque.  Nulla ut malesuada turpis. In sed purus aliquam, lacinia velit at, aliquam mauris. Aenean non finibus neque.</p>
+            <h4>Feature 1</h4>
+            <p>Actual One a new age aggression  tool  for all those scattered opportunity opportunity which are wide spried throught the vast landscape of internet bringing all the together at one convenient place.</p>
         </div>
         <div className={styles.block1_div2}>
-            <h4>Feature 1 will highlight here</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor ante vel risus auctor iaculis. Nulla ut malesuada turpis. In sed purus aliquam, lacinia velit at, aliquam mauris. Aenean non finibus neque.  Nulla ut malesuada turpis. In sed purus aliquam, lacinia velit at, aliquam mauris. Aenean non finibus neque.</p>
+            <h4>Feature 2</h4>
+            <p>Experience frictionless monetization with Actual One, a groundbreaking platform that eliminates the need for multiple intermediaries like banks and payment processors. Say goodbye to traditional systems and enjoy a seamless and hassle-free monetization experience.</p>
         </div>
       </div>
       <div className={styles.feature_block2}>
@@ -65,8 +65,8 @@ const FeatureComponent = () => {
           </div>
         </div>
         <div className={styles.block1_div2}>
-            <h4>Feature 1 will highlight here</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor ante vel risus auctor iaculis. Nulla ut malesuada turpis. In sed purus aliquam, lacinia velit at, aliquam mauris. Aenean non finibus neque.  Nulla ut malesuada turpis. In sed purus aliquam, lacinia velit at, aliquam mauris. Aenean non finibus neque.</p>
+            <h4>Feature 3</h4>
+            <p>Experience a new level of collaboration and turn the gig space into a multiplayer game with our platform. Actual One brings a layer of excitement to working on ideas, making collaboration fun and engaging. Unleash your creativity and join the multiplayer game of opportunity exploration and innovation.</p>
         </div>
       </div>
     </div>

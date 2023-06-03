@@ -284,6 +284,10 @@
     line-height: 125%;
     text-align: center;
     color: #222222;
+    @media (max-width: 1250px){
+      width: 107%;
+      margin: 0;
+    }
 }
 .waitlist_pic{
   color: #ac47ff;
@@ -347,6 +351,10 @@
   position: absolute;
   left: 5%;
   bottom: 2rem;
+  @media (max-width: 1250px){
+    width: 29%;
+    bottom: 0rem;
+  }
 }
 .launch_span{
   color: #AC47FF;
@@ -390,6 +398,8 @@
     display: none;
   }
   .mainHeadline{
+    width: 100%;
+    margin: 0;
     font-size: 50px;
   }
   .lineImage{
@@ -424,7 +434,7 @@
     width: 100%;
   }
   .mainHeadline{
-    width: 100%;
+    width: 100% !important;
     font-size: 55px;
     margin-bottom: -1rem;
   }
@@ -518,6 +528,9 @@
   position: absolute;
   right: -35rem;
   top: 0;
+  @media (max-width: 1250px){
+    display: none;
+  }
 }
 
 @media (max-width: 450px){

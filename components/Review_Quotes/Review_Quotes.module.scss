@@ -109,6 +109,7 @@
     font-size: 24px;
     line-height: 38px;
     color: #595959;
+    
 
     @media (max-width: 1000px) {
       width: 100%;
@@ -117,6 +118,18 @@
       & > * {
         width: 80%;
       }
+    }
+    @media (max-width: 1250px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 80%;
+      font-family: "Kalam";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 38px;
+      color: #595959;
     }
 
     .Identity {
@@ -133,6 +146,18 @@
       font-style: italic;
       //   font-family: $gilroy-bold-italic;
 
+      @media (max-width: 1250px) {
+        color: #003912;
+        font-weight: 900;
+        font-size: 1.2rem;
+        font-style: italic;
+      }
+      @media (max-width: 1050px) {
+        color: #003912;
+        font-weight: 900;
+        font-size: 1rem;
+        font-style: italic;
+      }
       @media (max-width: 920px) {
         color: #003912;
         font-weight: 900;
@@ -178,6 +203,10 @@
       }
     }
 
+    @media (max-width: 850px){
+      width: 100px;
+      height: 100px;
+    }
     @media (max-width: 550px){
       width: 70px;
       height: 70px;
@@ -215,7 +244,7 @@
   position: absolute;
   left: 0;
   z-index: 55;
-  width: 100%;
+  width: 115%;
 }
 
 .reviwe_owner{
@@ -225,16 +254,30 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 0.7rem;
+
+  
+  @media (max-width: 1050px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.7rem;
+  }
 }
 .reviwe_owner div h2{
   font-family: 'Karla';
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 23px;
   line-height: 28px;
   color: #222222;
   margin: 0;
+  @media (max-width: 1050px) {
+    font-size: 21px;
+    line-height: 28px;;
+  }
 }
 .reviwe_owner div p{
   font-family: 'Karla';
@@ -244,6 +287,10 @@
   line-height: 19px;
   margin: 0;
   color: #222222;
+  @media (max-width: 1050px) {
+    font-size: 14px;
+    line-height: 28px;;
+  }
 }
 @media (max-width: 950px){
   .review_profile{
@@ -336,4 +383,64 @@
       //   font-family: $gilroy-bold-italic;
     }
   }
+}
+@media (max-width: 910px){
+  .review_image{
+    position: absolute;
+    left: 0;
+    z-index: 55;
+    width: 110%;
+  }
+  .col2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 101% !important;
+    font-family: "Kalam";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px !important;
+    line-height: 38px;
+    color: #595959;
+
+    .Data {
+      color: #003912;
+      font-weight: 900;
+      font-size: 1rem !important;
+      font-style: italic;
+      //   font-family: $gilroy-bold-italic;
+    }
+  }
+}
+
+@media (max-width: 750px){
+  .review_image{
+    display: none;
+  }
+  .col2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80% !important;
+    font-family: "Kalam";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px !important;
+    line-height: 38px;
+    color: #595959;
+
+    .Data {
+      color: #003912;
+      font-weight: 900;
+      font-size: 1rem !important;
+      font-style: italic;
+      //   font-family: $gilroy-bold-italic;
+    }
+  }
+}
+
+
+
+@media (max-width: 1250px) {
+
 }
