@@ -50,7 +50,7 @@
   font-family: 'Karla';
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   width: 100%;
   white-space: nowrap;
   line-height: 125%;
@@ -194,7 +194,7 @@
 
 @media (max-width: 1220px){
   .Footer div:first-child{
-    width: 60%;
+    width: 100%;
   }
   .Logo h5{
     font-family: "Karla";
@@ -281,7 +281,7 @@
       width: 95% !important;
     }
   }
-@media (max-width: 400px){
+@media (max-width: 500px){
   .sub_btn{
     width: 20rem ;
     margin-top: 3rem;

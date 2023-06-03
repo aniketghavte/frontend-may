@@ -20,7 +20,7 @@
     color: #222222;
     display:flex;
     align-items: center;
-    @media (max-width: 500px) {
+    @media (max-width: 900px) {
       font-size: 2.2rem;
       font-weight: 700;
       font-size: 40px;
@@ -31,14 +31,18 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      text-align: center;
+      margin-bottom: 5rem;
     }
   }
   @media (max-width: 1000px) {
     width: 95vw;
+    padding: 0rem 0rem 10rem 0;
   }
 
   @media (max-width: 500px) {
     width: 98vw;
+    padding: 0rem 0rem 10rem 0;
   }
 
   .review_container{
@@ -63,12 +67,12 @@
   }
 
   .SingleBlock {
-    display: grid;
-    grid-template-columns: auto 70%;
-    grid-gap: 3rem;
     width: 45%;
-    overflow: hidden;
     transition: 1000ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 
     @media (max-width: 1000px) {
@@ -98,7 +102,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: 65%;
+    font-family: 'Kalam';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+    color: #595959;
 
     @media (max-width: 1000px) {
       width: 100%;
@@ -122,6 +132,13 @@
       font-size: 1.5rem;
       font-style: italic;
       //   font-family: $gilroy-bold-italic;
+
+      @media (max-width: 920px) {
+        color: #003912;
+        font-weight: 900;
+        font-size: 1.0rem;
+        font-style: italic;
+      }
     }
   }
 
@@ -160,6 +177,11 @@
         height: 100%;
       }
     }
+
+    @media (max-width: 550px){
+      width: 70px;
+      height: 70px;
+    }
   }
 
   .PrevButton {
@@ -180,6 +202,10 @@
   bottom: 0;
   top: 4rem;
   right: 0rem;
+
+  @media (max-width: 900px){
+    display: none;
+  }
 }
 
 .review_block{
@@ -189,4 +215,124 @@
   position: absolute;
   left: 0;
   z-index: 55;
+  width: 100%;
+}
+
+.reviwe_owner{
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.reviwe_owner div h2{
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #222222;
+  margin: 0;
+}
+.reviwe_owner div p{
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0;
+  color: #222222;
+}
+@media (max-width: 950px){
+  .review_profile{
+    width: 50px;
+    height: 50px;
+  }
+  .reviwe_owner div h2{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #222222;
+    margin: 0;
+  }
+  .reviwe_owner div p{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    margin: 0;
+    color: #222222;
+  }
+  .review_image{
+    position: absolute;
+    left: 0;
+    z-index: 55;
+    width: 110%;
+  }
+}
+
+@media (max-width: 550px){
+  .review_image{
+    display: none;
+  }
+  .col2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    font-family: 'Kalam';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+    color: #595959;
+
+    @media (max-width: 550px) {
+      width: 100%;
+      align-items: center;
+
+      & > * {
+        width: 50% !important;
+      }
+    }
+    .Data {
+      color: #003912;
+      font-weight: 900;
+      font-size: 1rem;
+      font-style: italic;
+      //   font-family: $gilroy-bold-italic;
+    }
+  }
+}
+@media (max-width: 1020px){
+  .review_image{
+    position: absolute;
+    left: 0;
+    z-index: 55;
+    width: 110%;
+  }
+  .col2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80% !important;
+    font-family: "Kalam";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px !important;
+    line-height: 38px;
+    color: #595959;
+
+    .Data {
+      color: #003912;
+      font-weight: 900;
+      font-size: 1rem !important;
+      font-style: italic;
+      //   font-family: $gilroy-bold-italic;
+    }
+  }
 }

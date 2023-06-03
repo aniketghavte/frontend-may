@@ -5,6 +5,7 @@ import game_underlline from '../../Images/game_underlline.svg'
 import left_arrow from '../../Images/left_arrow.svg'
 import right_arrow from '../../Images/right_arrow.svg'
 import review_container from '../../Images/review_container.svg'
+import profile_iamge from '../../Images/profile_iamge.svg'
 
 const Review_Quotes = () => {
   const Reviews = [
@@ -45,11 +46,11 @@ const Review_Quotes = () => {
   const SwitchInterval = useRef(null);
 
   useEffect(() => {
-    // SwitchInterval.current = setInterval(() => {
-    //   setActiveBlockIndex((prevVal) =>
-    //     prevVal === Reviews.length - 1 ? 0 : prevVal + 1
-    //   );
-    // }, 5000);
+    SwitchInterval.current = setInterval(() => {
+      setActiveBlockIndex((prevVal) =>
+        prevVal === Reviews.length - 1 ? 0 : prevVal + 1
+      );
+    }, 5000);
   }, []);
 
   return (
@@ -67,7 +68,7 @@ const Review_Quotes = () => {
       >
         {Reviews.map((item, index) => {
           return (
-            <div style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
+            <div style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}} key={index}>
               <div
                 key={index}
                 className={
@@ -78,7 +79,7 @@ const Review_Quotes = () => {
                 style={{width: "60%", position: "relative", height: "440px"}}
               >
                 <Image src={review_container} height={0} width={0} className={styles.review_image}/>
-     
+{/*      
                     <div className={styles.col1}>
                       <div
                         className={styles.Review_Quotes_Image}
@@ -91,11 +92,18 @@ const Review_Quotes = () => {
                           objectFit="cover"
                         />
                       </div>
-                    </div>
+                    </div> */}
                     <div className={styles.col2}>
-                      <div className={styles.Identity}>{item.identity}</div>
+                      {/* <div className={styles.Identity}>{item.identity}</div> */}
                       <div className={styles.Data}>&quot; {item.data} &quot;</div>
                     </div>           
+                    <div className={styles.reviwe_owner}>
+                      <Image src={profile_iamge} width={60} height={60} className={styles.review_profile}/>
+                      <div>
+                          <h2>Karl Marks</h2>
+                          <p>Founder & CTO karl capital</p>
+                      </div>
+                    </div>
                     {/* <div className={styles.review_block}>
                         <h1 style={{color: "black"}}>HEllo</h1>
                     </div> */}

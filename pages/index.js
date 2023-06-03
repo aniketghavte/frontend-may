@@ -9,6 +9,7 @@ import Blogs from "@/components/Blogs/Blogs";
 import Footer from "@/components/Footer/Footer";
 import UpdateStrip from "@/components/UpdateStrip/UpdateStrip";
 import FeatureComponent from "@/components/FeatureComponent/FeatureComponent";
+import Whyus from "@/components/WhyUs/Whyus";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
         <HeroSection />
         <FeatureComponent />
         <BountyCollection />
+        <Whyus/>
         <Blogs />
         <Review_Quotes />
         {/* <Newsletter /> */}
