@@ -71,7 +71,7 @@
     display: flex;
     position: absolute;
     top: 0;
-    left: 15%;
+    left: 5%;
     margin-top: 1rem;
     flex-direction: row;
     align-items: center;
@@ -162,6 +162,18 @@
         width: 100%;
         text-align: center;
     }
+    .video_h2{
+        width: 100%;
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 15%;
+        margin-top: 1rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5rem;
+      }
 }
 
 @media (max-width: 476px){
@@ -190,7 +202,7 @@
         display: flex;
         position: absolute;
         top: 0;
-        left: 8%;
+        left: 15%;
         margin-top: 1rem;
         flex-direction: row;
         align-items: center;

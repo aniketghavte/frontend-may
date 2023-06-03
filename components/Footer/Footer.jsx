@@ -51,11 +51,11 @@ const Footer = () => {
               <div className={styles.footer_tag}>
                   <h6>Socials</h6>
                   <div style={{display: "flex", flexDirection: "column", gap: "1rem", marginTop: "2rem"}}>
-                      <Link href={`/`}>Twitter</Link>
-                      <Link href={`/`}>Instagram</Link>
+                      <Link href={`https://twitter.com/ActualOnexyz`}>Twitter</Link>
+                      <Link href={`https://www.instagram.com/actualone.xyz/`}>Instagram</Link>
                       <Link href={`/`}>Discord</Link>
                       <Link href={`/`}>Telegram</Link>
-                      <Link href={`/`}>Medium</Link>          
+                      <Link href={`/`}>Medium</Link>       
                   </div>
               </div>
 

@@ -3,13 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800;900&family=Kalam:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap');
 
+
+@font-face {
+  font-family: "Exo 2";
+  src: url("../asset/Fonts/Exo_2/Exo2-VariableFont_wght.ttf");
+}
 body {
-  font-family: 'Exo 2','Karla' sans-serif;
+  font-family: 'Exo 2', sans-serif;
   margin: 0;
   transition: 500ms;
   overflow-x: hidden;
 }
-
 @font-face {
   font-family: "Karla";
   src: url("../asset/Fonts/Karla/Karla-VariableFont_wght.ttf");
