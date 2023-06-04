@@ -16,7 +16,7 @@ const BountyCollection = () => {
   const [Bounties, setBounties] = useState([
     {
       image: "/profile.png",
-      title: "A website that shows all the festivals ads by big brands tag - (dev) price pool",
+      title: "A website that shows all the festivals ads by big brands tag",
       tags: ["dev"],
       price_pool: "10$",
       link: "/bounty",
@@ -30,7 +30,7 @@ const BountyCollection = () => {
     },
     {
       image: "/bounty.webp",
-      title: "Prepare a case on the Role of community management in Web3(community)",
+      title: "Prepare a case on the Role of community management in Web3",
       tags: ["community"],
       price_pool: "10$",
       link: "/bounty",
@@ -44,7 +44,7 @@ const BountyCollection = () => {
     },
     {
       image: "/blogImg.webp",
-      title: "Prepare a list of communities where a SaaS brand can promote themselves(community)",
+      title: "Prepare a list of communities where a SaaS brand can promote themselves",
       tags: ["community"],
       price_pool: "10$",
       link: "/bounty",
@@ -59,7 +59,7 @@ const BountyCollection = () => {
 
     {
       image: "/blogImg.webp",
-      title: "study about ActualOne’s  marketing and suggest 3 new ideas they can try to grow (marketing)",
+      title: "study about ActualOne’s  marketing and suggest 3 new ideas they can try to grow",
       tags: ["marketing"],
       price_pool: "20$",
       link: "/bounty",
@@ -73,7 +73,7 @@ const BountyCollection = () => {
     },
     {
       image: "/profile.png",
-      title: "Write a linkdin post why building community important for brands in 2023 (community, web3)",
+      title: "Write a linkdin post why building community important for brands in 2023",
       tags: ["community", "web3"],
       price_pool: "5$",
       link: "/bounty",
@@ -87,7 +87,7 @@ const BountyCollection = () => {
     },
     {
       image: "/bounty.webp",
-      title: "Design a campaign to help a brand to its first 1000 community member(marketing)",
+      title: "Design a campaign to help a brand to its first 1000 community member",
       tags: ["marketing"],
       price_pool: "20$",
       link: "/bounty",

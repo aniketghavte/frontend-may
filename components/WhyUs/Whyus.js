@@ -91,9 +91,7 @@ const Whyus = () => {
           Why we
         </h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor ante vel risus auctor iaculis. Nulla ut
-          malesuada turpis. In sed purus aliquam, lacinia velit at, aliquam mauris. Aenean non finibus neque. Aenean non
-          finibus neque.
+        At Actual One, we understand the struggle of navigating the vast expanse of the internet in search of monetization options. Cause that were us few year back so with the powe of our community we  developed a platform that addresses this challenge by bringing together opportunities from all over the internet into one convenient place.
         </p>
 
       </div>
