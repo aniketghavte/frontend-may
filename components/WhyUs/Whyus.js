@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import styles from './Whyus.module.scss';
 import whyus_line from '../../Images/whyUs_line.svg';
@@ -12,7 +12,7 @@ const Whyus = () => {
   const Url = ['/a1.mp4', 'vid.mp4', ''];
 
   const handleNextClick = () => {
-    if (currentFeed === 2) {
+    if (currentFeed === 3) {
       setCurrentFeed(0);
     } else {
       setCurrentFeed(currentFeed + 1);
@@ -22,15 +22,29 @@ const Whyus = () => {
 
   const handlePrevClick = () => {
     if (currentFeed === 0) {
-      setCurrentFeed(2);
+      setCurrentFeed(3);
     } else {
       setCurrentFeed(currentFeed - 1);
     }
     console.log(currentFeed)
   };
 
-  const feeds = ["Hello guys, we are builders building ActualOne Protocol wid &lt&lt;3", "And we are going to tell you the story behind Actualone Protocol", "This is how we came into picture... Now its time to make it...Lfg"]
+  const feeds = [`Hello guys, we are builders building ActualOne Protocol wid <<3`, "And we are going to tell you the story behind Actualone Protocol", "Bunch of friends alway fall in the rabbit hole of monetization and opportunity , started with a college club and build  a community along teh way ,and built a platform along with the community" , "This is how we came into picture... Now its time to make it... \n Lfg"]
+ 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (currentFeed === 2) {
+        setCurrentFeed(0);
+      } else {
+        setCurrentFeed((prevFeed) => prevFeed + 1);
+      }
+    }, 7000);
 
+    return () => {
+      clearInterval(interval);
+    };
+  }, [currentFeed]);
+  
   return (
     <div className={styles.app__whyus}>
       <div className={styles.whyus_block1}>
@@ -38,7 +52,7 @@ const Whyus = () => {
             <div className={styles.feed_navigation}>
                 {
                     feeds.map((item, index) => {
-                        return(<hr style={{background: currentFeed >= index ? "white" : ""}}/>)
+                        return(<hr style={{background: currentFeed >= index ? "white" : ""}} key={key}/>)
                     })
                 }
             </div>

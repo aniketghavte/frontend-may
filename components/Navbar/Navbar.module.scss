@@ -45,7 +45,9 @@
   text-decoration: none;
   cursor: pointer;
 }
-
+.logo_image{
+  height: 75px !important;
+}
 .SearchBox {
   background-color: #e8eef6;
   border-radius: 30px;
@@ -114,6 +116,7 @@
       scale: 1.05;
     }
   }
+
   .JoinedButton {
     background: #AC47FF;
     border-radius: 10px;

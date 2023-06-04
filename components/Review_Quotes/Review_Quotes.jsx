@@ -6,38 +6,22 @@ import left_arrow from '../../Images/left_arrow.svg'
 import right_arrow from '../../Images/right_arrow.svg'
 import review_container from '../../Images/review_container.svg'
 import profile_iamge from '../../Images/profile_iamge.svg'
+import Roshan from '../../Images/roshan.jpg'
+import Vankshaia from '../../Images/Vankshaia.jpg'
 
 const Review_Quotes = () => {
   const Reviews = [
     {
-      image: "/profile.png",
-      identity: "Tim and Dan Joo, Co-Founder | Hearfest",
-      data: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eum laborum, dicta ut, provident quibusdam dolore ducimus repellat mollitia eius rerum non illum dolorem id sequi esse quas excepturi obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      image: Vankshaia,
+      name: "Vanshika",
+      identity: "Devrel engineer @Biconomy tech evangelist & creator",
+      data: "collaboration is the first step towards every successful story. The importance of mapping needs and wants and successfully being able to grasp knowledge, opportunity and experiences",
     },
     {
-      image: "/profile.png",
-      identity: "Tim and Dan Joo, Co-Founder | Hearfest",
-      data: "orem ipsum dolor sit amet consectetur adipisicinsssg elit. Deserunt eum laborum, dicta ut, provident quibusdam dolore ducimus repellat mollitia eius rerum non illum dolorem id sequi esse quas excepturi obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    },
-    {
-      image: "/profile.png",
-      identity: "Tim and Dan Joo, Co-Founder | Hearfest",
-      data: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eum laborum, dicta ut, provident quibusdam dolore ducimus repellat mollitia eius rerum non illum dolorem id sequi esse quas excepturi obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    },
-    {
-      image: "/profile.png",
-      identity: "Tim and Dan Joo, Co-Founder | Hearfest",
-      data: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eum laborum, dicta ut, provident quibusdam dolore ducimus repellat mollitia eius rerum non illum dolorem id sequi esse quas excepturi obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    },
-    {
-      image: "/profile.png",
-      identity: "Tim and Dan Joo, Co-Founder | Hearfest",
-      data: "orem ipsum dolor sit amet consectetur adipisicinsssg elit. Deserunt eum laborum, dicta ut, provident quibusdam dolore ducimus repellat mollitia eius rerum non illum dolorem id sequi esse quas excepturi obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    },
-    {
-      image: "/profile.png",
-      identity: "Tim and Dan Joo, Co-Founder | Hearfest",
-      data: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eum laborum, dicta ut, provident quibusdam dolore ducimus repellat mollitia eius rerum non illum dolorem id sequi esse quas excepturi obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      image: Roshan,
+      name: "Roshan",
+      identity: "founder @thefutureofwork • chief @prmsnls",
+      data: "opportunity should be permesionless",
     }
   ];
 
@@ -55,7 +39,7 @@ const Review_Quotes = () => {
 
   return (
     <div className={styles.Review_Quotes}>
-      <h1>Here&apos;s what people<span style={{margin: "0", position: "relative", color: "#AC47FF"}}>&nbsp;says&nbsp;<Image src={game_underlline} className={styles.game_underlline} height={0} width={0}/></span> <span/> About us</h1>
+      <h1>Here&apos;s what people<span style={{margin: "0", position: "relative", color: "#AC47FF"}}>&nbsp;says&nbsp;<Image src={game_underlline} className={styles.game_underlline} height={0} width={0}/></span> <span/></h1>
       <br />
       <br />
       <div>
@@ -68,7 +52,7 @@ const Review_Quotes = () => {
       >
         {Reviews.map((item, index) => {
           return (
-            <div style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}} key={index}>
+            <div style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", width: "50%"}} key={index}>
               <div
                 key={index}
                 className={
@@ -98,10 +82,10 @@ const Review_Quotes = () => {
                       <div className={styles.Data}>&quot; {item.data} &quot;</div>
                     </div>           
                     <div className={styles.reviwe_owner}>
-                      <Image src={profile_iamge} width={60} height={60} className={styles.review_profile}/>
+                      <Image src={item.image} width={60} height={60} className={styles.review_profile}/>
                       <div>
-                          <h2>Karl Marks</h2>
-                          <p>Founder & CTO karl capital</p>
+                          <h2>{item.name}</h2>
+                          <p>{item.identity}</p>
                       </div>
                     </div>
                     {/* <div className={styles.review_block}>

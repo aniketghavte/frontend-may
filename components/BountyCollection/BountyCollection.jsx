@@ -5,15 +5,23 @@ import { useEffect, useState } from "react";
 import Frame309 from '../../Images/Frame309.svg'
 import Frame12 from '../../Images/Frame12.svg'
 import target from '../../Images/board.svg'
+import app1 from '../../Images/app1.svg'
+import app2 from '../../Images/app2.svg'
+import app3 from '../../Images/app3.svg'
+import app4 from '../../Images/app4.svg'
+import app5 from '../../Images/app5.svg'
+import app6 from '../../Images/app6.svg'
 
 const BountyCollection = () => {
   const [Bounties, setBounties] = useState([
     {
       image: "/profile.png",
-      title: "Become ActualOne Protocol City Ambassador for a spam of minimum 6 months and organize events on behalf of ActualOne Protocol.",
-      tags: ["Frontend", "Web Dev", "Full Stack", "abc", "xyz"],
-      price_pool: "5 ETH",
+      title: "A website that shows all the festivals ads by big brands tag - (dev) price pool",
+      tags: ["dev"],
+      price_pool: "10$",
       link: "/bounty",
+      Applicants : "21",
+      Applicants_image : app1,
       owner: {
         profile_pic: "/profile.png",
         name: "Ashutosh Wagh",
@@ -22,10 +30,12 @@ const BountyCollection = () => {
     },
     {
       image: "/bounty.webp",
-      title: "Building a Decentralized Autonomous Organization for Public Governance: A Bounty Program for Web3 Developers and Civic Tech Experts",
-      tags: ["Frontend", "Web Dev", "Full Stack", "abc", "xyz"],
-      price_pool: "5 ETH",
+      title: "Prepare a case on the Role of community management in Web3(community)",
+      tags: ["community"],
+      price_pool: "10$",
       link: "/bounty",
+      Applicants : "13",
+      Applicants_image : app2,
       owner: {
         profile_pic: "/profile.png",
         name: "Ashutosh Wagh",
@@ -34,10 +44,12 @@ const BountyCollection = () => {
     },
     {
       image: "/blogImg.webp",
-      title: "Creating a Decentralized Marketplace for Renewable Energy Credits: A Bounty Program for Web3 Developers and Energy Expert",
-      tags: ["Frontend", "Web Dev", "Full Stack", "abc", "xyz"],
-      price_pool: "5 ETH",
+      title: "Prepare a list of communities where a SaaS brand can promote themselves(community)",
+      tags: ["community"],
+      price_pool: "10$",
       link: "/bounty",
+      Applicants : "7",
+      Applicants_image : app3,
       owner: {
         profile_pic: "/profile.png",
         name: "Ashutosh Wagh",
@@ -47,10 +59,12 @@ const BountyCollection = () => {
 
     {
       image: "/blogImg.webp",
-      title: "Creating a Decentralized Marketplace for Renewable Energy Credits: A Bounty Program for Web3 Developers and Energy Expert",
-      tags: ["Frontend", "Web Dev", "Full Stack", "abc", "xyz"],
-      price_pool: "5 ETH",
+      title: "study about ActualOne’s  marketing and suggest 3 new ideas they can try to grow (marketing)",
+      tags: ["marketing"],
+      price_pool: "20$",
       link: "/bounty",
+      Applicants : "9",
+      Applicants_image : app4,
       owner: {
         profile_pic: "/profile.png",
         name: "Ashutosh Wagh",
@@ -59,10 +73,12 @@ const BountyCollection = () => {
     },
     {
       image: "/profile.png",
-      title: "Creating a Decentralized Social Media Platform: A Bounty Program for Web3 Developers and Social Media Entrepreneurs",
-      tags: ["Frontend", "Web Dev", "Full Stack", "abc", "xyz"],
-      price_pool: "5 ETH",
+      title: "Write a linkdin post why building community important for brands in 2023 (community, web3)",
+      tags: ["community", "web3"],
+      price_pool: "5$",
       link: "/bounty",
+      Applicants : "25",
+      Applicants_image : app5,
       owner: {
         profile_pic: "/profile.png",
         name: "Ashutosh Wagh",
@@ -71,10 +87,12 @@ const BountyCollection = () => {
     },
     {
       image: "/bounty.webp",
-      title: "Revolutionizing Healthcare with Blockchain: A Bounty Program for Healthtech Innovators",
-      tags: ["Frontend", "Web Dev", "Full Stack", "abc", "xyz"],
-      price_pool: "5 ETH",
+      title: "Design a campaign to help a brand to its first 1000 community member(marketing)",
+      tags: ["marketing"],
+      price_pool: "20$",
       link: "/bounty",
+      Applicants : "3",
+      Applicants_image : app6,
       owner: {
         profile_pic: "/profile.png",
         name: "Ashutosh Wagh",
@@ -126,7 +144,7 @@ const BountyCollection = () => {
     <div className={styles.BountyCollection}>
       <h1>Lets hunt&nbsp;<span style={{color: "#AC47FF"}}>Bounties</span>&nbsp;with us !!! <Image src={target} height={0} width={0} style={{marginLeft: "2rem"}} className={styles.h1_image}/></h1>
       <hr />
-      {/* <div className={styles.Tabs}>
+      <div className={styles.Tabs}>
         {Tabs.map((item, index) => {
           return (
             <div
@@ -145,7 +163,7 @@ const BountyCollection = () => {
             </div>
           );
         })}
-      </div> */}
+      </div>
 
       <div className={styles.Collection}>
         {SortedBounties.length === 0 && (
@@ -202,10 +220,26 @@ const BountyCollection = () => {
                    <p>Start Date - 1st May  ·  End Date - 15th May</p>
                 </div>
                 <div className={styles.bountyTags}>
-                    <Image src={Frame12} height={0} width={0} style={{width: "100%"}}  />
+                  {
+                    item.tags.map((tag, key) => {
+                      return(
+                        <p key={key}>{tag}</p>
+                      )
+                    })
+                  }
                 </div>
                 <div className={styles.bountyDetails}>
-                    <Image src={Frame309} height={0} width={0} style={{width: "100%"}} />
+                    {/* <Image src={Frame309} height={0} width={0} style={{width: "100%"}} /> */}
+                    <div className={styles.bountyDetails_block}>
+                        <div>
+                            <p>Applicants:</p>
+                            <span className={styles.applicant_span}> <Image src={item?.Applicants_image} height={0} width={0} /> <h3>+ {item.Applicants} others</h3></span>
+                        </div>
+                        <div>
+                          <p>Price Pool:</p>
+                          <h2>{item?.price_pool}</h2>
+                        </div>
+                    </div>
                 </div>
             </div>
           );

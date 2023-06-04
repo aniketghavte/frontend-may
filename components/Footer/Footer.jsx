@@ -6,10 +6,11 @@ import {AiOutlineTwitter} from "react-icons/ai"
 import {AiFillLinkedin} from "react-icons/ai"
 import footer_hero from "../../Images/footer_hero.svg"
 import footer_arrow from "../../Images/footer_arrow.svg"
-
+import {Toaster, Toast, toast} from 'react-hot-toast'
 const Footer = () => {
-  const handleSubscribeNewsLetter = () => {
-  
+  const handleSubscribeNewsLetter = (e) => {
+    e.preventDefault();
+    toast.success("Successfully Subscribe To New Letter")
   }
   return (
     <div className={styles.app__footer}>
@@ -24,10 +25,10 @@ const Footer = () => {
               <div className={styles.logo_block2}>
                 <div className={styles.sub_btn}>
                   <h4 >Subscribe our Newsletter to stay updated</h4>
-                    <form>
-                  <div className={styles.block3} onSubmit={handleSubscribeNewsLetter}>
+                    <form onSubmit={handleSubscribeNewsLetter}>
+                  <div className={styles.block3} >
                         <div className={styles.waitlistDiv}>
-                        <input placeholder="Enter Your mail" type="email" />
+                        <input placeholder="Enter Your mail" type="email" required />
                       </div>
                       <button type="submit" >Subscribe</button>             
 
@@ -42,7 +43,7 @@ const Footer = () => {
                   <h6>Quick Links</h6>
                   <div style={{display: "flex", flexDirection: "column", gap: "1rem", marginTop: "2rem"}}>
                       <Link href={`/`}>Back to top</Link>
-                      <Link href={`/`}>About us</Link>
+                      <Link href={`/aboutus`}>About us</Link>
                       <Link href={`/`}>Our team</Link>
                       <Link href={`mailto:actualone.xyz@gmail.com`}>contact@actualone.xyz</Link>          
                   </div>
@@ -52,10 +53,8 @@ const Footer = () => {
                   <h6>Socials</h6>
                   <div style={{display: "flex", flexDirection: "column", gap: "1rem", marginTop: "2rem"}}>
                       <Link href={`https://twitter.com/ActualOnexyz`}>Twitter</Link>
-                      <Link href={`https://www.instagram.com/actualone.xyz/`}>Instagram</Link>
-                      <Link href={`/`}>Discord</Link>
-                      <Link href={`/`}>Telegram</Link>
-                      <Link href={`/`}>Medium</Link>       
+                      <Link href={`https://www.instagram.com/actualone.xyz/`}>Instagram</Link>   
+                      <Link href={`https://actualone-protocol.beehiiv.com/subscribe`}>Blogs</Link>   
                   </div>
               </div>
 
@@ -74,6 +73,10 @@ const Footer = () => {
                 <Image src={footer_hero} width={0} height={0} className={styles.footer_hero_image}/>
             </div>
         </div>
+        <Toaster       
+        position="top-center"
+        reverseOrder={false}
+        />
     </div>
 
   );

@@ -245,6 +245,7 @@
   left: 0;
   z-index: 55;
   width: 115%;
+  left: -20px;
 }
 
 .reviwe_owner{
@@ -291,6 +292,11 @@
     font-size: 14px;
     line-height: 28px;;
   }
+}
+.review_profile{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 @media (max-width: 950px){
   .review_profile{
@@ -344,7 +350,7 @@
       align-items: center;
 
       & > * {
-        width: 50% !important;
+        width: 90% !important;
       }
     }
     .Data {

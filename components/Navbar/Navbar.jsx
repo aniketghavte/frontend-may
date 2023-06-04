@@ -5,6 +5,7 @@ import Image from "next/image";
 import {AiOutlineCloseCircle} from 'react-icons/ai'
 import { useSession, signIn, signOut } from "next-auth/react";
 import wallet from '../../Images/wallet-black.svg'
+import logo_beta from '../../Images/logo_beta.svg'
 
 const Navbar = () => {
 
@@ -67,9 +68,8 @@ const Navbar = () => {
        }
             <nav className={styles.Navbar}>
           <div className={styles.Logo}>
-            <Link href={`/`}>ActualOne
-            <br />
-            Protocol
+            <Link href={`/`}>
+              <Image src={logo_beta} width={170} height={150} className={styles.logo_image}/>
             </Link>
             
           </div>
@@ -79,8 +79,8 @@ const Navbar = () => {
 
           <div className={styles.NavButtons}>
           <div className={styles.nav_tags}>
-            <Link href={`/`}><h4>About</h4></Link>
-            <Link href={`/`}><h4>Contact Us</h4></Link>
+            <Link href={`/aboutus`}><h4>About</h4></Link>
+            <Link href={`mailto:actualone.xyz@gmail.com`}><h4>Contact Us</h4></Link>
           </div>
             {
               session ? <Link href={`/waitlist`}>

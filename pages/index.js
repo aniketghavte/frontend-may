@@ -33,7 +33,7 @@ export default function Home() {
         <FeatureComponent />
         <BountyCollection />
         <Whyus/>
-        <Blogs />
+        {/* <Blogs /> */}
         <Review_Quotes />
         {/* <Newsletter /> */}
         <UpdateStrip />

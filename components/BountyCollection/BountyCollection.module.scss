@@ -29,7 +29,7 @@
       user-select: none;
       cursor: pointer;
       border: 1px solid #00000020;
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 8px 0px;
+      // box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 8px 0px;
       transition: 200ms;
       padding: 0.5rem 1rem;
       border-radius: 8px;
@@ -201,13 +201,26 @@
     align-items: left;
     justify-content: start;
     margin-top: 1rem;
+    p{
+      margin: 0;
+      padding: 4px 10px;
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #FFD335;
+      border-radius: 20px;
+      font-family: 'Karla';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 12px;
+      color: #D2A503;
+    }
 }
 .bountyDetails{
   width:90%;
   display: flex;
+  flex-direction: column;
   align-items: left;
   justify-content: start;
-  margin-top: 1rem;
+  margin-top: 0rem;
 }
 
 @media (max-width: 900px){
@@ -252,5 +265,57 @@
   }
   .bountyCard{
     width: 90%;
+  }
+}
+
+.bountyDetails_block{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bountyDetails_block div:first-child p{
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #595959;
+}
+.bountyDetails_block div:last-child p{
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #595959;
+}
+.bountyDetails_block div:last-child h2{
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 16px;
+  color: #AC47FF;
+  margin-top: -0.5rem;
+}
+.applicant_span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-top: -0.5rem;
+  h3{
+    margin: 0;
+    margin-left: 0.5rem;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 12px;
+    leading-trim: both;
+    text-edge: cap;
+    letter-spacing: -0.02em;
+    text-decoration-line: underline;
+    color: #868686;
   }
 }
