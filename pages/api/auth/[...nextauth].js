@@ -2,11 +2,12 @@ import NextAuth from "next-auth"
 import axios from "axios";
 import GoogleProvider from "next-auth/providers/google";
 
-const createUser = (session) => {
+const createUser = async (session) => {
     console.log("user form auth" , session);
-    axios.post('https://xy2s9f3v4f.execute-api.ap-south-1.amazonaws.com/dev/api/waitlist/register', {
+    await axios.post('https://xy2s9f3v4f.execute-api.ap-south-1.amazonaws.com/dev/api/waitlist/register', {
       email: session?.token?.email,
-      name: session?.token?.name
+      name: session?.token?.name,
+      username: ""
     })
     .then(function (response) {
       console.log(response);
