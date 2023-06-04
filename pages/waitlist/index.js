@@ -79,9 +79,10 @@ const Waitlist = () => {
       params.set('url', tweetUrl);
       const twitterShareUrl = `https://twitter.com/share?${params.toString()}`;
     
-      // Open Twitter share URL in a new browser tab
-      window.open(twitterShareUrl, '_blank');
+      // Open Twitter share URL in the current tab
+      window.location.href = twitterShareUrl;
     }
+    
     
     // useEffect(() => {
       
