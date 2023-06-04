@@ -16,6 +16,27 @@ const Waitlist = () => {
     console.log("session", session);
     console.log(session?.token?.email)
 
+
+    const createUser = async (session) => {
+      console.log("user form auth" , session);
+      await axios.post('https://xy2s9f3v4f.execute-api.ap-south-1.amazonaws.com/dev/api/waitlist/register', {
+        email: session?.token?.email,
+        name: session?.token?.name,
+        username: session?.token?.sub,
+        isUserNameSet:"false"
+      })
+      .then(function (response) {
+        setUser(response?.data?.user)
+        console.log(response);
+      })
+      .catch(function (error) {
+        if (error.response && error.response.data) {
+          console.log(error.response.data); // This will log the response body containing the error message
+        } else {
+          console.log(error); // Fallback to logging the entire error object if response data is not available
+        }
+      });
+  }
     useEffect(() => {
         const checkSession = async () => {
           if (!session) {
@@ -28,7 +49,11 @@ const Waitlist = () => {
             })
             .then(function (response) {
               setUser(response?.data?.profile?.data?.user)
-              console.log(response);
+              console.log( "statuts",response?.data?.profile?.status)
+              if(response?.data?.profile?.status === 404){
+                createUser(session);
+              }
+              console.log(response)
             })
             .catch(function (error) {
               console.log(error);
@@ -47,7 +72,8 @@ const Waitlist = () => {
           axios.post('https://xy2s9f3v4f.execute-api.ap-south-1.amazonaws.com/dev/api/waitlist/updateUser', {
             email: session.token.email,
             updatedData: {
-              username: newUserName
+              username: newUserName,
+              isUserNameSet: "true"
             }
             })
             .then(function (response) {
@@ -56,7 +82,8 @@ const Waitlist = () => {
               } else {
                 setUser(response?.data?.profile?.data?.user)
                 console.log(response);
-                toast.success("UserName Sucessfully Updated")                
+                toast.success("UserName Sucessfully Updated")  
+                              
               }
             })
             .catch(function (error) {
@@ -124,7 +151,7 @@ const Waitlist = () => {
             </div>
             <div style={{marginTop: "1rem", display:"flex", justifyContent:"center", alignItems: "center", flexDirection: "column"}}>
               {
-                user?.username ? <>
+                user?.isUserNameSet === "true" ? <>
                   <div className={styles.block3_new_2}>
                       <div className={styles.waitlistDiv_new}>
                       <div style={{display: "flex", gap: "0"}}>actualone.xyz/{user?.username}</div>
