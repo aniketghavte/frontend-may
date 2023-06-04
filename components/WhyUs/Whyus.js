@@ -12,7 +12,7 @@ const Whyus = () => {
   const Url = ['/a1.mp4', 'vid.mp4', ''];
 
   const handleNextClick = () => {
-    if (currentFeed === 3) {
+    if (currentFeed === 4) {
       setCurrentFeed(0);
     } else {
       setCurrentFeed(currentFeed + 1);
@@ -22,18 +22,18 @@ const Whyus = () => {
 
   const handlePrevClick = () => {
     if (currentFeed === 0) {
-      setCurrentFeed(3);
+      setCurrentFeed(4);
     } else {
       setCurrentFeed(currentFeed - 1);
     }
     console.log(currentFeed)
   };
 
-  const feeds = ["Hello guys, we are builders building ActualOne Protocol wid 3", "And we are going to tell you the story behind Actualone Protocol", "Bunch of friends alway fall in the rabbit hole of monetization and opportunity , started with a college club and build  a community along teh way ,and built a platform along with the community" , "This is how we came into picture... Now its time to make it... \n Lfg"]
+  const feeds = ["Hello guys, we are builders building ActualOne Protocol wid 3", "And we are going to tell you the story behind Actualone Protocol", "Growing along the way, we cultivated a vibrant community of like-minded individuals.   \n\n\n\n Growing along the way, we cultivated a vibrant community of like-minded individuals.","Recognizing the potential for monetization and seizing opportunities, we developed our own platform to better serve our community's needs." , "This is how we came into picture... Now its time to make it... \n Lfg"]
  
   useEffect(() => {
     const interval = setInterval(() => {
-      if (currentFeed === 2) {
+      if (currentFeed === 4) {
         setCurrentFeed(0);
       } else {
         setCurrentFeed((prevFeed) => prevFeed + 1);

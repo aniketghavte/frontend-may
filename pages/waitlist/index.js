@@ -98,7 +98,7 @@ const Waitlist = () => {
           <div style={{display: "flex", flexDirection: "column", alignItems: "center" , justifyContent: "center"}}>
       <div className={styles.block2}>
             <div className={styles.headline}>
-              Join The ActualOne Protocol&apos;s Waitlist
+            Join The ActualOne Protocol Beta
             </div>
             <div className={styles.mainHeadline}>
               <p style={{margin: "0"}}>Yoo, 

@@ -21,6 +21,7 @@ const BountyCollection = () => {
       price_pool: "10$",
       link: "/bounty",
       Applicants : "21",
+      time: "Start Date - 1st June  ·  End Date - 15th June",
       Applicants_image : app1,
       owner: {
         profile_pic: "/profile.png",
@@ -35,6 +36,7 @@ const BountyCollection = () => {
       price_pool: "10$",
       link: "/bounty",
       Applicants : "13",
+      time: "Start Date - 6th June  ·  End Date -26th June",
       Applicants_image : app2,
       owner: {
         profile_pic: "/profile.png",
@@ -50,6 +52,7 @@ const BountyCollection = () => {
       link: "/bounty",
       Applicants : "7",
       Applicants_image : app3,
+      time: "Start Date - 11th June  ·  End Date - 20th June",
       owner: {
         profile_pic: "/profile.png",
         name: "Ashutosh Wagh",
@@ -65,6 +68,7 @@ const BountyCollection = () => {
       link: "/bounty",
       Applicants : "9",
       Applicants_image : app4,
+      time: "Start Date - 13th June  ·  End Date - 30th June",
       owner: {
         profile_pic: "/profile.png",
         name: "Ashutosh Wagh",
@@ -79,6 +83,7 @@ const BountyCollection = () => {
       link: "/bounty",
       Applicants : "25",
       Applicants_image : app5,
+      time: "Start Date - 20th June  ·  End Date - 5th July",
       owner: {
         profile_pic: "/profile.png",
         name: "Ashutosh Wagh",
@@ -93,6 +98,7 @@ const BountyCollection = () => {
       link: "/bounty",
       Applicants : "3",
       Applicants_image : app6,
+      time: "Start Date - 24th June  ·  End Date - 10th July",
       owner: {
         profile_pic: "/profile.png",
         name: "Ashutosh Wagh",
@@ -217,7 +223,7 @@ const BountyCollection = () => {
                    <h3>
                      {item.title}
                    </h3>
-                   <p>Start Date - 1st May  ·  End Date - 15th May</p>
+                   <p>{item.time}</p>
                 </div>
                 <div className={styles.bountyTags}>
                   {

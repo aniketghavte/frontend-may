@@ -1,10 +1,10 @@
 'use client';
 import styles from "./HeroSection.module.scss";
 import { useState } from "react";
+import { useRouter } from "next/router";
 import Image from "next/image";
 import axios from "axios";
 import close from '../../Images/close.svg';
-import { useRouter } from "next/router";
 import {AiOutlineCloseCircle} from 'react-icons/ai'
 import { useSession, signIn, signOut } from "next-auth/react";
 import wallet from '../../Images/wallet-black.svg'
@@ -68,6 +68,13 @@ const HeroSection = () => {
     )
   }
 
+  const handleOnClickBlock3 = () => {
+    if(session){
+      router.push("/waitlist")
+    } else {
+      handleJoinClick()
+    }
+  }
   const handleJoinClick = () => {
 
     setIsPopupOpened(true);
@@ -122,7 +129,7 @@ const HeroSection = () => {
        }
       <div className={styles.block2}>
             <div className={styles.headline}>
-              Join The ActualOne Protocol Beta Waitlist
+              Join The ActualOne Protocol Beta
             </div>
             <div className={styles.mainHeadline}>
               <p style={{margin: "0"}}>We are taking 
@@ -131,17 +138,17 @@ const HeroSection = () => {
             <div>
             <p className={styles.subheadline}>Yass!!! You have read that <span style={{position: "relative"}}>correctly <Image src={correctly_underline} className={styles.correctly_underline} height={0} width={0}/></span></p>
             </div>
-            <div className={styles.block3}>
+            <div className={styles.block3}  onClick={handleOnClickBlock3}>
                 {
                   session ? <>
                   <div className={styles.waitlistDiv}>Hey, {session?.token?.name}</div>
-                  <Link href={`/waitlist`} style={{textDecoration: "none", color: "white"}}><button>See WaitList</button></Link>
+                  <button>See WaitList</button>
                   </> : <>
-                  <div className={styles.waitlistDiv}v>
+                  <div className={styles.waitlistDiv}>
                    <div>actualone.xyz/</div>
                   </div>
    
-                  <button onClick={handleJoinClick}>Join</button>
+                  <button>Join</button>
 
                   </>
                 }

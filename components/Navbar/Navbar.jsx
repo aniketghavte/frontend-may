@@ -1,14 +1,19 @@
 import { useState } from "react";
 import styles from "./Navbar.module.scss";
 import Link from "next/link";
+import { PopupModal } from "react-calendly";
 import Image from "next/image";
 import {AiOutlineCloseCircle} from 'react-icons/ai'
 import { useSession, signIn, signOut } from "next-auth/react";
 import wallet from '../../Images/wallet-black.svg'
 import logo_beta from '../../Images/logo_beta.svg'
+import { globalVar } from "@/pages/_app";
+import { useContext } from "react";
 
 const Navbar = () => {
+  // const {setIsClalendly} = useContext(globalVar);
 
+  const [isClalendly, setIsClalendly] = useState(false)
   const [isPopupOpened, setIsPopupOpened] = useState(false);
   const { data: session } = useSession()
   console.log("session", session);
@@ -61,6 +66,17 @@ const Navbar = () => {
 
     setIsPopupOpened(true);
   }
+
+
+  const handleClickCalendly = () => {
+    if(isClalendly){
+      setIsClalendly(false)
+    } else {
+      setIsClalendly(true)
+    }
+  }
+
+
   return (
     <>
         {
@@ -80,7 +96,7 @@ const Navbar = () => {
           <div className={styles.NavButtons}>
           <div className={styles.nav_tags}>
             <Link href={`/aboutus`}><h4>About</h4></Link>
-            <Link href={`mailto:actualone.xyz@gmail.com`}><h4>Contact Us</h4></Link>
+            <h4 onClick={handleClickCalendly}>Contact Us</h4>
           </div>
             {
               session ? <Link href={`/waitlist`}>
@@ -92,6 +108,15 @@ const Navbar = () => {
             
           </div>
         </nav>
+        {/* <PopupModal
+          url="https://calendly.com/actualone-protocol/30min"
+          // pageSettings={this.props.pageSettings}
+          // utm={this.props.utm}
+          // prefill={this.props.prefill}
+          onModalClose={() =>  setIsClalendly(false) }
+          open={isClalendly}
+          rootElement={returnDoc()}
+        /> */}
      
     </> );
 
