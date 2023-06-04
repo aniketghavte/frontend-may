@@ -12,7 +12,11 @@ const createUser = (session) => {
       console.log(response);
     })
     .catch(function (error) {
-      console.log(error);
+      if (error.response && error.response.data) {
+        console.log(error.response.data); // This will log the response body containing the error message
+      } else {
+        console.log(error); // Fallback to logging the entire error object if response data is not available
+      }
     });
 }  
 console.log(process.env.GOOGLE_CLIENT_ID)
