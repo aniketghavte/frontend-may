@@ -71,18 +71,18 @@ const Waitlist = () => {
     //   };
     //    handleShareButtonClick()
     // }
-      const handleShareButtonClick = () => {
-          const tweetText = 'Hey, I just get into the ActualOne Waitlist Join!'; // The text you want to share on Twitter
-          const tweetUrl = 'https://actualone.xyz'; // The URL you want to share
-          const params = new URLSearchParams();
-          params.set('text', tweetText);
-          params.set('url', tweetUrl);
-          const twitterShareUrl = `https://twitter.com/share?${params.toString()}`;
-
-
-          router.push(twitterShareUrl);
-         
-      }
+    const handleShareButtonClick = () => {
+      const tweetText = 'Hey, I just got into the ActualOne Waitlist Join!';
+      const tweetUrl = 'https://actualone.xyz'; // The URL you want to share
+      const params = new URLSearchParams();
+      params.set('text', tweetText);
+      params.set('url', tweetUrl);
+      const twitterShareUrl = `https://twitter.com/share?${params.toString()}`;
+    
+      // Open Twitter share URL in a new browser tab
+      window.open(twitterShareUrl, '_blank');
+    }
+    
     // useEffect(() => {
       
     // }, [window])
