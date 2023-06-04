@@ -74,14 +74,14 @@ const Waitlist = () => {
     const handleShareButtonClick = () => {
       const tweetText = 'Hey, I just got into the ActualOne Waitlist Join!';
       const tweetUrl = 'https://actualone.xyz'; // The URL you want to share
-      const params = new URLSearchParams();
-      params.set('text', tweetText);
-      params.set('url', tweetUrl);
-      const twitterShareUrl = `https://twitter.com/share?${params.toString()}`;
+      const encodedTweetText = encodeURIComponent(tweetText);
+      const encodedTweetUrl = encodeURIComponent(tweetUrl);
+      const twitterShareUrl = `https://twitter.com/intent/tweet?text=${encodedTweetText}&url=${encodedTweetUrl}`;
     
-      // Open Twitter share URL in the current tab
-      window.location.href = twitterShareUrl;
+      // Open Twitter share URL in a new browser tab
+      window.open(twitterShareUrl, '_blank');
     }
+    
     
     
     // useEffect(() => {
