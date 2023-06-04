@@ -29,7 +29,7 @@ const Whyus = () => {
     console.log(currentFeed)
   };
 
-  const feeds = [`Hello guys, we are builders building ActualOne Protocol wid <<3`, "And we are going to tell you the story behind Actualone Protocol", "Bunch of friends alway fall in the rabbit hole of monetization and opportunity , started with a college club and build  a community along teh way ,and built a platform along with the community" , "This is how we came into picture... Now its time to make it... \n Lfg"]
+  const feeds = ["Hello guys, we are builders building ActualOne Protocol wid 3", "And we are going to tell you the story behind Actualone Protocol", "Bunch of friends alway fall in the rabbit hole of monetization and opportunity , started with a college club and build  a community along teh way ,and built a platform along with the community" , "This is how we came into picture... Now its time to make it... \n Lfg"]
  
   useEffect(() => {
     const interval = setInterval(() => {
@@ -52,7 +52,7 @@ const Whyus = () => {
             <div className={styles.feed_navigation}>
                 {
                     feeds.map((item, index) => {
-                        return(<hr style={{background: currentFeed >= index ? "white" : ""}} key={key}/>)
+                        return(<hr style={{background: currentFeed >= index ? "white" : ""}} key={index}/>)
                     })
                 }
             </div>
