@@ -38,10 +38,7 @@ const Giveaway = () => {
     } else if(userEmail === ''){
         toast.error('Please Enter the Email')
         return;
-    } else if(!isTwitterUrl(twitterLink)){
-      toast.error('Please Enter the Correct Twitter Url')
-      return;
-    }
+    } 
     toast.loading('Saving Data...');
     axios.post('https://www.actualone.xyz/api/hello', {
         userEmail : userEmail,
