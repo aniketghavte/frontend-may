@@ -7,7 +7,7 @@ import {AiOutlineCloseCircle} from 'react-icons/ai'
 import { useSession, signIn, signOut } from "next-auth/react";
 import wallet from '../../Images/wallet-black.svg'
 import logo_beta from '../../Images/logo_beta.svg'
-import { globalVar } from "@/pages/_app";
+import { globalVar } from "../../pages/_app";
 import { useContext } from "react";
 
 const Navbar = () => {
@@ -97,6 +97,7 @@ const Navbar = () => {
           <div className={styles.nav_tags}>
             <Link href={`/aboutus`}><h4>About</h4></Link>
             <h4 onClick={handleClickCalendly}>Contact Us</h4>
+            <Link href={`/giveaway`}><h4>Giveaway</h4></Link>
           </div>
             {
               session ? <Link href={`/waitlist`}>
