@@ -11,7 +11,7 @@ export interface IGiveawayUser extends Document {
 const GiveawayUser: Model<IGiveawayUser> =
   models.GiveawayUser ||
   model<IGiveawayUser>(
-    'NftUser',
+    'GiveawayUser',
     new Schema({
         userEmail: {
         type: String,
