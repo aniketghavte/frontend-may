@@ -23,7 +23,7 @@
     "react-fast-marquee": "^1.5.2",
     "react-hot-toast": "^2.4.1",
     "react-icons": "^4.8.0",
-    "sass": "^1.62.1"
+    "sass": "^1.64.2"
   },
   "devDependencies": {
     "@types/react": "18.2.18"

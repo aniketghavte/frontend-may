@@ -1,4 +1,3 @@
-@import "@/styles/_config.scss";
 
 .FeatureComponent {
   padding: 4rem 9vw;
@@ -14,14 +13,14 @@
   }
 
   h1 {
-    font-family: $gilroy-bold;
+    font-family: gilroy-bold;
     font-size: 2.2rem;
   }
   .col1 {
     .Point {
       margin-bottom: 1rem;
       .PointHeading {
-        font-family: $gilroy-bold;
+        font-family: gilroy-bold;
         display: flex;
         align-items: center;
         font-size: 1.25rem;
