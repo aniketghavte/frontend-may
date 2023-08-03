@@ -44,6 +44,7 @@ const Footer = () => {
                   <div style={{display: "flex", flexDirection: "column", gap: "1rem", marginTop: "2rem"}}>
                       <Link href={`/`}>Back to top</Link>
                       <Link href={`/aboutus`}>About us</Link>
+                      <Link href={`/giveaway`}>Giveaway</Link>
                       {/* <Link href={`/`}>Our team</Link> */}
                       <Link href={`mailto:actualone.xyz@gmail.com`}>contact@actualone.xyz</Link>          
                   </div>
