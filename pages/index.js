@@ -1,15 +1,15 @@
 import Head from "next/head";
-import styles from "@/styles/Home.module.scss";
-import Navbar from "@/components/Navbar/Navbar";
-import HeroSection from "@/components/HeroSection/HeroSection";
-import BountyCollection from "@/components/BountyCollection/BountyCollection";
-import Newsletter from "@/components/Newsletter/Newsletter";
-import Review_Quotes from "@/components/Review_Quotes/Review_Quotes";
-import Blogs from "@/components/Blogs/Blogs";
-import Footer from "@/components/Footer/Footer";
-import UpdateStrip from "@/components/UpdateStrip/UpdateStrip";
-import FeatureComponent from "@/components/FeatureComponent/FeatureComponent";
-import Whyus from "@/components/WhyUs/Whyus";
+import styles from "../styles/Home.module.scss";
+import Navbar from "../components/Navbar/Navbar";
+import HeroSection from "../components/HeroSection/HeroSection";
+import BountyCollection from "../components/BountyCollection/BountyCollection";
+import Newsletter from "../components/Newsletter/Newsletter";
+import Review_Quotes from "../components/Review_Quotes/Review_Quotes";
+import Blogs from "../components/Blogs/Blogs";
+import Footer from "../components/Footer/Footer";
+import UpdateStrip from "../components/UpdateStrip/UpdateStrip";
+import FeatureComponent from "../components/FeatureComponent/FeatureComponent";
+import Whyus from "../components/WhyUs/Whyus";
 
 export default function Home() {
   return (
