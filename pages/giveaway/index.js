@@ -120,13 +120,6 @@ const Giveaway = () => {
                 </div>
                 <hr/>
                 <div className={styles.desc_give}>
-                    <p><span>Note:- </span>📢  Comments before 5th August 2023, 🕛 11:59 PM IST will only be considered as valid for #Giveaway entries!</p>
-                    <p>🤔 What are you waiting for?</p>
-                    <p>🥁 Grab this opportunity to win <Link href={''} target='_blank'>@web3conf_india</Link> tickets for #FREE 🎟</p>
-                    <p>Best of luck #LFG🤞</p>
-                </div>
-                <hr/>
-                <div className={styles.desc_give}>
                     <p><span>Criteria:-</span> 📢 Rules are very simple:</p>
                     <p>▶ Follow <Link href={'https://twitter.com/web3conf_india'} target='_blank'>@web3conf_india</Link> & <Link href={'https://twitter.com/ActualOnexyz'} target='_blank'>@Actualonexyz</Link></p>
                     <p>▶ Tag a patner, fren with whom you would like to go to web3conf</p>
@@ -137,6 +130,13 @@ const Giveaway = () => {
                         <p>Tag <Link href={'https://twitter.com/web3conf_india'} target='_blank'>@web3conf</Link></p>
                     </div>
                     <p>👉 <Link href={'https://twitter.com/web3conf_india'} target='_blank'>@teamweb3conf</Link> will select 10 winners from the comments after verifying the above steps 🙌</p>
+                </div>
+                <hr/>
+                <div className={styles.desc_give}>
+                    <p><span>Note:- </span>📢  Comments before 5th August 2023, 🕛 11:59 PM IST will only be considered as valid for #Giveaway entries!</p>
+                    <p>🤔 What are you waiting for?</p>
+                    <p>🥁 Grab this opportunity to win <Link href={''} target='_blank'>@web3conf_india</Link> tickets for #FREE 🎟</p>
+                    <p>Best of luck #LFG🤞</p>
                 </div>
 
                 <p></p>
