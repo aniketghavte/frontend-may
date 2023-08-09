@@ -13,7 +13,7 @@ const Treasure = () => {
 
   useEffect(() => {
     toast.loading('Saving Data...');
-    axios.get('http://localhost:3000/api/treasure/bounty')
+    axios.get('https://www.actualone.xyz/api/treasure/bounty')
     .then(response => {
         console.log(response.data.data);
         toast.dismiss();
