@@ -61,7 +61,7 @@ const Giveaway = () => {
         return;
     } 
     toast.loading('Saving Data...');
-    axios.post('http://localhost:3000/api/treasure/submission/submit', {
+    axios.post('https://www.actualone.xyz/api/treasure/submission/submit', {
         bountyId : router.query.bountyId,
         userEmail : userEmail,
         twitterLink : twitterLink
