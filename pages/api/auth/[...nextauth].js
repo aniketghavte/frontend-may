@@ -4,7 +4,7 @@ import GoogleProvider from "next-auth/providers/google";
 
 const createUser = async (session) => {
     console.log("user form auth" , session);
-    await axios.post('https://xy2s9f3v4f.execute-api.ap-south-1.amazonaws.com/dev/api/waitlist/register', {
+    await axios.post('https://www.actualone.xyz/api/waitlist/register', {
       email: session?.token?.email,
       name: session?.token?.name,
       username: ""

@@ -10,7 +10,7 @@ export default async function handler(req, res) {
       console.log(process.env.MONGODB_URI);
       await mongoose.connect(process.env.MONGODB_URI);
       const _id = decodeURIComponent(req.url.split('/treasure/')[1]);
-      console.log("_id>>>>>>>>>", req.body);
+      console.log("_id>>>>>>>>>", _id);
       // const allBounties: ITreasureBounty[] = await TreasureBounty.find({_id: _id});
   
       const bounty: ITreasureBounty | null = await TreasureBounty.findOne({ _id: _id });

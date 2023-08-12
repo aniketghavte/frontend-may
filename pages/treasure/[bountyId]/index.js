@@ -21,7 +21,7 @@ const Giveaway = () => {
   useEffect(() => {
     toast.loading('Getting Data...'); 
     if(router.query.bountyId !== undefined ){
-        axios.get(`http://localhost:3000/api/treasure/${router.query.bountyId}`, {
+        axios.get(`https://www.actualone.xyz/api/treasure/${router.query.bountyId}`, {
             bountyId: router.query.bountyId
         })
         .then(response => {
@@ -177,6 +177,11 @@ const Giveaway = () => {
                     {/* <p>🤔 What are you waiting for?</p>
                     <p>🥁 Grab this opportunity to win <Link href={''} target='_blank'>@web3conf_india</Link> tickets for #FREE 🎟</p> */}
                     <p>Best of luck #LFG🤞</p>
+                </div>
+                <hr/>
+                <div className={styles.desc_give}>
+                    <p><span>{bountyData?.organization === "ActualOne Protocol" ? "By" : "In partnership With :"} :- {bountyData?.organization} </span></p>
+
                 </div>
 
                 <p></p>

@@ -44,7 +44,8 @@ const Treasure = () => {
                     src={item.banner ? item.banner : treasure}
                   />
                   <p>{item?.title}</p>
-                  <p>{item?.pricePool}</p>
+                  <p><span style={{fontWeight: "600"}}>Reward : </span>{item?.reward}</p>
+                  <p><span style={{fontWeight: "600"}}>{item?.organization === "ActualOne Protocol" ? "By" : "In partnership With :"} </span>{item?.organization}</p>
               </Link>
             )
           })

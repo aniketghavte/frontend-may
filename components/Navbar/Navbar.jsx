@@ -97,7 +97,7 @@ const Navbar = () => {
           <div className={styles.nav_tags}>
             <Link href={`/aboutus`}><h4>About</h4></Link>
             <h4 onClick={handleClickCalendly}>Contact Us</h4>
-            <Link href={`/giveaway`}><h4>Giveaway</h4></Link>
+            <Link href={`/treasure`}><h4>Treasure</h4></Link>
           </div>
             {
               session ? <Link href={`/waitlist`}>

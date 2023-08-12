@@ -42,11 +42,7 @@ const Waitlist = () => {
           if (!session) {
             router.push('/'); 
           } else {
-            axios.get('https://xy2s9f3v4f.execute-api.ap-south-1.amazonaws.com/dev/api/waitlist/getuser', {
-              params :{
-                email: session.token.email
-              }
-            })
+            axios.get(`https://www.actualone.xyz/api/waitlist/${session.token.email}`)
             .then(function (response) {
               setUser(response?.data?.profile?.data?.user)
               console.log( "statuts",response?.data?.profile?.status)
@@ -69,7 +65,7 @@ const Waitlist = () => {
         if(!newUserName || newUserName === ""){
           toast.error("Enter Valid UserName")
         } else {
-          axios.post('https://xy2s9f3v4f.execute-api.ap-south-1.amazonaws.com/dev/api/waitlist/updateUser', {
+          axios.post('https://www.actualone.xyz/api/waitlist/updateuser', {
             email: session.token.email,
             updatedData: {
               username: newUserName,
@@ -137,20 +133,20 @@ const Waitlist = () => {
 
             </div>
             <div>
-              <p style={{fontSize: "1.2rem", fontWeight: "600"}}>Your Current Positon on the Waitlist</p>
+              <p style={{fontSize: "1.2rem", fontWeight: "600"}}>Our Public Beta Will be Launch Soon</p>
             </div>
-            <div className={styles.block3}>
+            {/* <div className={styles.block3}>
                   
                   <div className={styles.waitlistDiv}v>
                    <div>#{user?.waitlistRank}</div>
                   </div>
    
-            </div>
+            </div> */}
             <div style={{marginTop: "1rem", display: "flex", flexDirection: "column", alignItems: "center",justifyContent: "center",width: "80%", textAlign: "center"}}>
               <p style={{fontSize: "1.2rem", fontWeight: "600"}}>Level up your waitlist game, by Sharing it to your Social, <span style={{cursor: "pointer", color: "#ac47ff"}} onClick={handleShareButtonClick}>Share</span></p>
             </div>
             <div style={{marginTop: "1rem", display:"flex", justifyContent:"center", alignItems: "center", flexDirection: "column"}}>
-              {
+              {/* {
                 user?.isUserNameSet === "true" ? <>
                   <div className={styles.block3_new_2}>
                       <div className={styles.waitlistDiv_new}>
@@ -171,7 +167,7 @@ const Waitlist = () => {
                 
                   </div>                
                 </>
-              }
+              } */}
 
             </div>
             <Image src={finalImage} alt="get Started " className={styles.finalImage}/>
