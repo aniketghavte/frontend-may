@@ -12,7 +12,7 @@ const Treasure = () => {
   const [allBounties, setAllBounties] = useState();
 
   useEffect(() => {
-    toast.loading('Saving Data...');
+    toast.loading('Getting Data...');
     axios.get('https://www.actualone.xyz/api/treasure/bounty')
     .then(response => {
         console.log(response.data.data);
@@ -41,7 +41,10 @@ const Treasure = () => {
             return(
               <Link href={`/treasure/${item._id}`} key={key} className={styles.bounty}>
                   <Image
+                    loader={({ src }) => src}
                     src={item.banner ? item.banner : treasure}
+                    width={0}
+                    height={0}
                   />
                   <p>{item?.title}</p>
                   <p><span style={{fontWeight: "600"}}>Reward : </span>{item?.reward}</p>
