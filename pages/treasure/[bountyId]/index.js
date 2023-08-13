@@ -86,7 +86,7 @@ const Giveaway = () => {
     
     <div className={styles.app__exclusive}>
         <div className={styles.exclusive_header}>
-              <Image src={bountyData?.banner ? bountyData.banner : ex_bg} height={0} width={0} className={styles.exbg}/>
+              <Image loader={({ src }) => src} src={bountyData?.banner ? bountyData.banner : ex_bg} height={0} width={0} className={styles.exbg}/>
               {/* <div className={styles.exclusive_header_text}>
                  <Image src={ex4} height={0} width={0} className={styles.ex4}/>
                  <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
