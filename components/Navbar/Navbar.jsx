@@ -69,13 +69,8 @@ const Navbar = () => {
 
 
   const handleClickCalendly = () => {
-    if(isClalendly){
-      setIsClalendly(false)
-    } else {
-      setIsClalendly(true)
-    }
+    window.open("mailto:actualone.xyz@gmail.com");
   }
-
 
   return (
     <>
@@ -97,15 +92,15 @@ const Navbar = () => {
           <div className={styles.nav_tags}>
             <Link href={`/aboutus`}><h4>About</h4></Link>
             <h4 onClick={handleClickCalendly}>Contact Us</h4>
-            <Link href={`/treasure`}><h4>Treasure</h4></Link>
+            {/* <Link href={`/treasure`}><h4>Treasure</h4></Link> */}
           </div>
-            {
+            {/* {
               session ? <Link href={`/waitlist`}>
                 <button className={styles.JoinedButton}>See Waitlist</button>
               </Link> : <>
                 <button className={styles.JoinButton} onClick={handleJoinClick}>Join</button>
               </>
-            }
+            } */}
             
           </div>
         </nav>

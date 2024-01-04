@@ -30,13 +30,11 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <HeroSection />
-        <FeatureComponent />
+        {/* <FeatureComponent />
         <BountyCollection />
         <Whyus/>
-        {/* <Blogs /> */}
         <Review_Quotes />
-        {/* <Newsletter /> */}
-        <UpdateStrip />
+        <UpdateStrip /> */}
       </main>
       <Footer />
     </>

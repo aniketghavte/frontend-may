@@ -13,7 +13,7 @@ const GiveawayUser: Model<IGiveawayUser> =
   model<IGiveawayUser>(
     'GiveawayUser',
     new Schema({
-        userEmail: {
+      userEmail: {
         type: String,
         required: true,
       },

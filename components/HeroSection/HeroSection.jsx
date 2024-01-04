@@ -129,15 +129,15 @@ const HeroSection = () => {
        }
       <div className={styles.block2}>
             <div className={styles.headline}>
-              Join The ActualOne Protocol Beta
+              Join The ActualOne Protocol
             </div>
             <div className={styles.mainHeadline}>
-              <p style={{margin: "0"}}>We are taking 
-                <span style={{color: "#ac47ff", position:"relative"}}>&nbsp;Opportunities <Image src={arrow} className={styles.oppo_arrow} height={0} width={0}/></span>&nbsp;to a multiplayer <span style={{margin: "0", position: "relative"}}>game <Image src={game_underlline} className={styles.game_underlline} height={0} width={0}/></span></p>
+              <p style={{margin: "0"}}>Comming
+                <span style={{color: "#ac47ff", position:"relative"}}> Soon</span></p>
             </div>
-            <div>
+            {/* <div>
             <p className={styles.subheadline}>Yass!!! You have read that <span style={{position: "relative"}}>correctly <Image src={correctly_underline} className={styles.correctly_underline} height={0} width={0}/></span></p>
-            </div>
+            </div> */}
             <div className={styles.block3}  onClick={handleOnClickBlock3}>
                 {
                   session ? <>
@@ -152,7 +152,7 @@ const HeroSection = () => {
 
                   </>
                 }
-                <Image src={right_svg} alt="get Started " className={styles.joinWaitlistImage}/>
+                {/* <Image src={right_svg} alt="get Started " className={styles.joinWaitlistImage}/> */}
             </div>
             {/* <Image src={left_svg} alt="get Started " className={styles.finalImage}/> */}
         </div>
