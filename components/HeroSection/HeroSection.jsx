@@ -170,7 +170,7 @@ const HeroSection = () => {
                 </div>
 
               <div style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
-                  <h2>Subscribe our Newsletter to stay updated</h2>
+                  <h2 style={{textAlign: "center"}}>Subscribe our Newsletter to stay updated</h2>
                   <div className={styles.newletterbtn}>
                       <form onSubmit={handleSubscribeNewsLetter} style={{display:"flex", flexDirection: "column", alignItems: "center",gap: "1rem"}}>
                           <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required placeholder="Enter your email address" className={styles.emailInput}/>
