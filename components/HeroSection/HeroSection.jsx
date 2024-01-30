@@ -15,10 +15,14 @@ import left_svg from '../../Images/left_svg.svg'
 import arrow from '../../Images/arrow.svg'
 import correctly_underline from '../../Images/correctly_underline.svg'
 import game_underlline from '../../Images/game_underlline.svg'
+import {Toaster, Toast, toast} from 'react-hot-toast'
 
 const HeroSection = () => {
   const [userName, setUserName] = useState("");
   const [isUserLoggedIn, setIsUserLoggedIn] = useState(false)
+
+
+  const [email, setEmail] = useState("")
   const router = useRouter();
   const [isPopupOpened, setIsPopupOpened] = useState(false);
   const { data: session } = useSession()
@@ -78,6 +82,11 @@ const HeroSection = () => {
   const handleJoinClick = () => {
 
     setIsPopupOpened(true);
+  }
+  const handleSubscribeNewsLetter = (e) => {
+    e.preventDefault();
+    toast.success("Successfully Subscribe To New Letter");
+    setEmail("")
   }
   return (
     // <div>
@@ -163,12 +172,18 @@ const HeroSection = () => {
               <div style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
                   <h2>Subscribe our Newsletter to stay updated</h2>
                   <div className={styles.newletterbtn}>
-                      <input type="text" placeholder="Enter your email address" className={styles.emailInput}/>
-                      <button>Subscribe</button>
+                      <form onSubmit={handleSubscribeNewsLetter} style={{display:"flex", flexDirection: "column", alignItems: "center",gap: "1rem"}}>
+                          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required placeholder="Enter your email address" className={styles.emailInput}/>
+                          <button type="submit" style={{width: "max-content"}} >Subscribe</button>
+                      </form>
                   </div>
               </div>
             {/* <Image src={left_svg} alt="get Started " className={styles.finalImage}/> */}
         </div>
+        <Toaster       
+        position="top-center"
+        reverseOrder={false}
+        />
     </div>    
   );
 };
