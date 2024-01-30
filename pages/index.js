@@ -36,7 +36,7 @@ export default function Home() {
         <Review_Quotes />
         <UpdateStrip /> */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
