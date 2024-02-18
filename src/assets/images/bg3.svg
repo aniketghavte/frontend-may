@@ -1,0 +1,20 @@
+<svg width="1035" height="954" viewBox="0 0 1035 954" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_231_112)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M140.446 831.78C96.5959 794.603 97.6442 720.587 102.946 651.845C107.917 587.38 138.443 519.361 169.786 451.332C201.734 381.991 230.578 310.086 287.91 250.386C346.97 188.886 420.822 139.312 493.92 113.808C564.969 89.019 624.136 107.168 688.014 110.789C754.141 114.538 831.971 99.7663 876.465 135.494C922.056 172.102 938.753 237.567 932.969 307.48C927.435 374.367 881.992 445.662 845.014 515.616C809.67 582.478 778.809 652.179 721.097 708.293C662.893 764.884 591.695 804.6 522.17 829.518C454.958 853.606 395.421 846.87 333.414 847.238C265.538 847.64 183.888 868.611 140.446 831.78Z" fill="url(#paint0_radial_231_112)"/>
+</g>
+<defs>
+<filter id="filter0_f_231_112" x="0.381836" y="0.98877" width="1033.69" height="952.555" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_231_112"/>
+</filter>
+<radialGradient id="paint0_radial_231_112" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(285.499 837.545) rotate(-46.1879) scale(872.413 542.594)">
+<stop offset="0.146667" stop-color="#080320"/>
+<stop offset="0.246667" stop-color="#0F1340"/>
+<stop offset="0.386667" stop-color="#14376D"/>
+<stop offset="0.6" stop-color="#393269"/>
+<stop offset="0.8" stop-color="#3D2856"/>
+<stop offset="1" stop-color="#2E1E39"/>
+</radialGradient>
+</defs>
+</svg>
