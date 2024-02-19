@@ -30,13 +30,13 @@ export default function Home() {
                 <button>SUBSCRIBE</button>
             </div>
             <div className={styles.socials}>
-               <Link href="https://twitter.com/">
-                  <Image src={tele} alt="twitter" width={40} height={40} />
+               <Link href="https://t.me/ActualOnexyz">
+                  <Image src={tele} alt="Telegram" width={40} height={40} />
                </Link>
-                <Link href="https://discord.com/">
+                <Link href="https://twitter.com/ActualOnexyz">
                     <Image src={x} alt="x" width={40} height={40} />
                 </Link>
-                <Link href="https://discord.com/">
+                <Link href="https://discord.com/invite/RxR9nEY5eU">
                     <Image src={dis} alt="discord" width={40} height={40} />
                 </Link>
             </div>
