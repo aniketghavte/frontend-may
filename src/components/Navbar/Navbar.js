@@ -27,7 +27,7 @@ export default function Navbar() {
             <Image src={logo} alt="logo" width={100} height={100} />
             <Image src={name} alt="name" width={100} height={100} />
         </div>
-        <div className={styles.navbar_block2}>
+        {/* <div className={styles.navbar_block2}>
             <button style={{color : active === "home" ? "#b979fd" : "", borderBottom: active === "home" ? "2px solid #b979fd" : ""}}>
                 <Link href={"/"}>Home</Link>
             </button>
@@ -37,11 +37,13 @@ export default function Navbar() {
             <button style={{color : active === "products" ? "#b979fd" : "", borderBottom: active === "products" ? "2px solid #b979fd" : ""}}>
             <Link href={"/products"}>Products</Link>
             </button>
-        </div>
+        </div> */}
         <div className={styles.navbar_block3}>
-            <button>
-                contact
-            </button>
+            <Link href={"https://calendly.com/apoorav_vyas"} target='_blank'>
+                <button>
+                    Contact
+                </button>
+            </Link>
         </div>
     </div>
   )
